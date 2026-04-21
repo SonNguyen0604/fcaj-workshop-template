@@ -1,59 +1,148 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2024-04-17
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 1:
 
 * Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm kiến thức AWS cơ bản và cách sử dụng AWS Console & AWS CLI.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+<table>
+  <thead>
+    <tr>
+      <th>Thứ</th>
+      <th>Công việc</th>
+      <th>Ngày bắt đầu</th>
+      <th>Ngày hoàn thành</th>
+      <th>Nguồn tài liệu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>
+        <ul>
+          <li>Làm quen với các thành viên FCJ</li>
+          <li>Đọc và ghi chú các nội quy, quy định tại đơn vị thực tập</li>
+          <li>Tạo AWS Free Tier account</li>
+          <li>Thiết lập MFA cho tài khoản</li>
+        </ul>
+      </td>
+      <td>17/04/2026</td>
+      <td>17/04/2026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <ul>
+          <li>Nhận đủ $200 Credit</li>
+          <li>
+            Tìm hiểu các dịch vụ AWS để nhận $100
+            <ul>
+              <li>EC2</li>
+              <li>Amazon Bedrock</li>
+              <li>Aurora &amp; RDS</li>
+              <li>AWS Budgets</li>
+              <li>AWS Lambda</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>18/04/2026</td>
+      <td>18/04/2026</td>
+      <td><a href="https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/">https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>
+        <ul>
+          <li>
+            Tìm hiểu Cost Management với AWS Budgets
+            <ul>
+              <li>Tạo Budget</li>
+              <li>Tạo Cost Budget</li>
+              <li>Tạo Usage Budget</li>
+              <li>Tạo RI Budget</li>
+              <li>Tạo Savings Plans Budget</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>19/04/2026</td>
+      <td>19/04/2026</td>
+      <td><a href="https://000007.awsstudygroup.com/">https://000007.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>
+        <ul>
+          <li>
+            Tìm hiểu AWS Support Plans
+            <ul>
+              <li>Truy cập AWS Support</li>
+              <li>Quản lý yêu cầu hỗ trợ</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>20/04/2026</td>
+      <td>20/04/2026</td>
+      <td><a href="https://000009.awsstudygroup.com/">https://000009.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>
+        <ul>
+          <li>
+            Tìm hiểu IAM cơ bản
+            <ul>
+              <li>Tạo IAM Group và Users (Admin Group, Admin User, đăng nhập Admin User)</li>
+              <li>Tạo IAM Role (Admin Role, OperatorUser)</li>
+              <li>Switch Role</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>08/15/2025</td>
+      <td>08/15/2025</td>
+      <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
+    </tr>
+  </tbody>
+</table>
 
+### KẾT QUẢ TUẦN 1: NỀN TẢNG AWS & QUẢN LÝ CHI PHÍ
 
-### Kết quả đạt được tuần 1:
+1. **Kiến thức nền tảng Cloud & Thiết lập ban đầu**
+   - **Tài khoản & Bảo mật:** Khởi tạo thành công AWS Free Tier account và bật Multi-Factor Authentication (MFA) để bảo vệ tài khoản root.
+   - **Tổng quan dịch vụ:** Nắm kiến thức nền tảng về các dịch vụ cốt lõi, bao gồm EC2, Amazon Bedrock, Aurora & RDS và AWS Lambda.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+   ![w1_d2_1](/images/1-Worklog/w1_d2_1.png)
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+2. **Quản lý chi phí AWS & Lập ngân sách**
+   - Làm chủ công cụ và chiến lược theo dõi/kiểm soát chi tiêu cloud với AWS Budgets:
+     - **Tạo Budget & Cảnh báo:** Thiết lập các budget tuỳ chỉnh và cấu hình email cảnh báo tự động khi chi tiêu vượt ngưỡng.
+     - **Theo dõi Cost & Usage:** Tạo Cost Budgets để theo dõi chi tiêu thực tế và Usage Budgets để theo dõi mức sử dụng tài nguyên theo dịch vụ.
+     - **Lập kế hoạch tối ưu:** Tạo RI (Reserved Instance) Budgets và Savings Plans Budgets để theo dõi mức sử dụng và tối ưu hiệu quả chi phí.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+   ![w1_d2_2](/images/1-Worklog/w1_d2_2.png)
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+3. **AWS Support & Quản lý Case**
+   - Hiểu tổng quan hệ sinh thái AWS Support để xử lý các vấn đề kỹ thuật và billing:
+     - **Support Plans:** So sánh các gói (Basic, Developer, Business, Enterprise) và cách chuyển đổi gói theo nhu cầu.
+     - **Quản lý yêu cầu:** Thực hành tạo support case, chọn mức Severity phù hợp và trao đổi hiệu quả với kỹ sư hỗ trợ AWS.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+   ![w1_d2_3](/images/1-Worklog/w1_d2_3.png)
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+4. **IAM cơ bản (Identity and Access Management)**
+   - **Quản trị định danh:** Thiết lập cấu trúc quyền cơ bản bằng cách tạo IAM Groups và Admin Users phục vụ quản trị.
+   - **Kiểm soát truy cập theo vai trò (RBAC):** Tạo IAM Roles (Admin, Operator) và sử dụng tính năng Switch Role để quản lý tài nguyên an toàn mà không cần dùng tài khoản root.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+   ![w1_d2_4](/images/1-Worklog/w1_d2_4.png)
 
 
