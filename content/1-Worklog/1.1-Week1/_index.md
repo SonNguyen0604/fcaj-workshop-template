@@ -8,7 +8,7 @@ pre: " <b> 1.1. </b> "
 ### Week 1 Objectives:
 
 * Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand basic AWS services
 
 ### Tasks to be carried out this week:
 <table>
@@ -108,8 +108,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>08/15/2025</td>
-      <td>08/15/2025</td>
+      <td>21/04/2026</td>
+      <td>21/04/2026</td>
       <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
     </tr>
   </tbody>
@@ -142,3 +142,5 @@ pre: " <b> 1.1. </b> "
    ![w1_d2_4](/images/1-Worklog/w1_d2_1.png)
    ![w1_d2_4](/images/1-Worklog/w1_d2_2.png)
    ![w1_d2_4](/images/1-Worklog/w1_d2_4.png)
+
+  
