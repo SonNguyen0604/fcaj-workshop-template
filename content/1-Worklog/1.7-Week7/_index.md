@@ -1,52 +1,135 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-06-01
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deploy Application on Docker: Deep dive into multi-container containerization, local deployment, and AWS cloud architecture integration.
+* Container Management & Deployment: Build, manage, and deploy software applications using Docker containers, Docker Compose, and Amazon EC2 instances.
+* Image Registries & Database Integration: Create and configure container repositories on Amazon ECR and Docker Hub, and connect application containers with Amazon RDS (MySQL) within isolated VPC security groups.
+
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Task</th>
+      <th>Start Date</th>
+      <th>Completion Date</th>
+      <th>Reference Material</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>
+      <ul>
+        <li>
+            Deploy on Local
+            <ul>
+              <li>Install Dependencies</li>
+              <li>Deploy Application</li>
+              <li>Test Application</li>
+            </ul>
+          </li>
+          </ul>
+      </td>
+      <td>01/06/2026</td>
+      <td>01/06/2026</td>
+      <td>
+        <a href="https://000015.awsstudygroup.com/">https://000015.awsstudygroup.com/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <ul>
+          <li>
+            Preparation & Infrastructure Setup
+            <ul>
+                <li>Preparation steps for AWS deployment</li>
+                <li>Launch RDS Instance</li>
+                <li>Configuring EC2 Instance</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>02/06/2026</td>
+      <td>02/06/2026</td>
+      <td>
+      <a href="https://000015.awsstudygroup.com/">https://000015.awsstudygroup.com/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>
+        <ul>
+          <li>
+            Deploy use only Docker Image
+            <ul>
+              <li>6.1. Deploy Application (Nginx, Application, Webserver)</li>
+              <li>6.2. Test Application connected to Amazon RDS (MySQL)</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>03/06/2026</td>
+      <td>03/06/2026</td>
+      <td><a href="https://000015.awsstudygroup.com/">https://000015.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>
+        <ul>
+          <li>
+            Deploy with Docker Compose
+              <ul>
+                <li>7.1. Deploying the Application using Docker Compose & Docker Daemon</li>
+                <li>7.2. Testing the multi-container Application stack</li>
+              </ul>
+          </li>
+        </ul>
+      </td>
+      <td>04/06/2026</td>
+      <td>04/06/2026</td>
+      <td><a href="https://000015.awsstudygroup.com/">https://000015.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>
+        <ul>
+          <li>
+            Push Image & Clean Up
+               <ul>
+                <li>8.1. Using ECR (Create Elastic Container Registry for Frontend Image)</li>
+                <li>8.2. Use Docker Hub</li>
+                <li>9. Clean Up Resources</li>
+              </ul>
+          </li>
+        </ul>
+      </td>
+      <td>05/06/2026</td>
+      <td>05/06/2026</td>
+      <td><a href="https://000015.awsstudygroup.com/">https://000015.awsstudygroup.com/</a></td>
+    </tr>
+  </tbody>
+</table>
 
 
-### Week 7 Achievements:
+### WEEK 7 ACHIEVEMENTS: DEPLOY APPLICATION ON DOCKER WORKSHOP
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+1. **Local Containerization & Application Testing**
+   - **Environment Isolation:** Evaluated the benefits of containerized baselines over personal local host systems using Docker platform environments.
+   - **Stack Verification:** Successfully containerized and validated a multi-tier application stack consisting of a Browser client, Nginx Server, Web Applications (React/Node.js), and Database Engines.
 
-* Successfully created and configured an AWS Free Tier account.
+2. **Cloud Architecture & Container Hosting Pipeline**
+   - **Compute & Database Provisioning:** Configured Amazon EC2 hosting nodes and deployed an Amazon RDS (MySQL) database engine isolated within a private subnet group.
+   - **Network Security Segregation:** Orchestrated traffic flow through an AWS VPC Internet Gateway, implementing isolated Security Groups for Public EC2 instance contents and Private DB SG layers.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+3. **Multi-Container Orchestration & Registry Management**
+   - **Docker Compose Implementation:** Streamlined application services orchestration by managing container groups directly via the Docker Daemon and Docker Compose configurations.
+   - **Image Management & Hosting:** Engineered and established artifact deployment pathways by pushing verified container images to remote public/private registries, including Amazon Elastic Container Registry (ECR) and Docker Hub.

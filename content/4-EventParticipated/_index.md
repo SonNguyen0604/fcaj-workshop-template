@@ -20,13 +20,17 @@ pre: " <b> 4. </b> "
 During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
 
 ### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+&emsp;**Event Name:** FCAJ Community Day - AWS First Cloud AI Journey  
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Date & Time:** 09:00 - 12:00, May 23, 2026  
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Location:** 26th Floor, Bitexco Financial Tower, 2 Hai Trieu, Ben Nghe Ward, District 1, Ho Chi Minh City  
 
 &emsp;**Role:** Attendee  
+
+&emsp;**Description:** A technology community event focused on GenAI applications, LLM engineering breakthroughs (Multi-Agent systems, prompt context management), cloud infrastructure optimization (Amazon CloudFront), and real-world MVP development from hackathons.
+
+&emsp;**Outcomes:** Gained practical insights into building "Second AI Brains" and enterprise-grade AI agents, mastered technical solutions for handling LLM non-determinism, and learned best practices for cost-optimized, secure edge computing.
 
 ---
 

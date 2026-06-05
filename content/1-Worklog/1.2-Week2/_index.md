@@ -1,9 +1,9 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-04-17
-weight: 1
+date: 2026-04-27
+weight: 2
 chapter: false
-pre: " <b> 1.1. </b> "
+pre: " <b> 1.2. </b> "
 ---
 ### Week 2 Objectives:
 
@@ -39,8 +39,8 @@ pre: " <b> 1.1. </b> "
           </li>
           </ul>
       </td>
-      <td>22/04/2026</td>
-      <td>22/04/2026</td>
+      <td>27/04/2026</td>
+      <td>27/04/2026</td>
       <td><a href="https://000003.awsstudygroup.com/3-prerequisite/">https://000003.awsstudygroup.com/3-prerequisite/</a></td>
       <td></td>
     </tr>
@@ -60,8 +60,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>23/04/2026</td>
-      <td>23/04/2026</td>
+      <td>28/04/2026</td>
+      <td>28/04/2026</td>
       <td><a href="https://000003.awsstudygroup.com/4-createec2server/">https://000003.awsstudygroup.com/4-createec2server/</a></td>
     </tr>
     <tr>
@@ -78,8 +78,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>24/04/2026</td>
-      <td>24/04/2026</td>
+      <td>29/04/2026</td>
+      <td>29/04/2026</td>
       <td><a href="https://000003.awsstudygroup.com/5-vpnsitetosite/">https://000003.awsstudygroup.com/5-vpnsitetosite/</a></td>
     </tr>
     <tr>
@@ -97,8 +97,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>25/04/2026</td>
-      <td>25/04/2026</td>
+      <td>30/04/2026</td>
+      <td>30/04/2026</td>
       <td><a href="https://000010.awsstudygroup.com/">https://000010.awsstudygroup.com/</a></td>
     </tr>
     <tr>
@@ -116,8 +116,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>26/04/2026</td>
-      <td>26/04/2026</td>
+      <td>01/05/2026</td>
+      <td>01/05/2026</td>
       <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
     </tr>
   </tbody>
@@ -130,17 +130,12 @@ pre: " <b> 1.1. </b> "
    - **VPC Fundamentals:** Successfully designed and deployed a custom Virtual Private Cloud (VPC), including public/private subnets and Internet Gateways for external connectivity.
    - **Traffic Control:** Configured Route Tables and Security Groups to manage inbound and outbound traffic, ensuring granular security at the instance level.
    - **Monitoring:** Enabled VPC Flow Logs to capture and analyze IP traffic information for network troubleshooting and security auditing.
-    ![w1_d2_2](/images/1-Worklog/w1_d5_1.png)
-    ![w1_d2_2](/images/1-Worklog/w1_d5_2.png)
-    ![w1_d2_2](/images/1-Worklog/w1_d5_3.png)
-    ![w1_d2_2](/images/1-Worklog/w1_d5_4.png)
+  
 2. **EC2 Compute & Connectivity Solutions**
    - **Instance Deployment:** Launched and managed Amazon EC2 instances, verifying connectivity via VS Code and EC2 Instance Connect Endpoints.
    - **Network Address Translation:** Implemented NAT Gateways to allow instances in private subnets to securely access the internet for updates while remaining shielded from unsolicited inbound traffic.
    - **Observability:** Integrated CloudWatch Monitoring & Alerting to track instance performance and set up automated notifications for system health.
-   ![w1_d2_2](/images/1-Worklog/w2_d2_1.png)
-   ![w1_d2_2](/images/1-Worklog/w2_d2_2.png)
-   ![w1_d2_2](/images/1-Worklog/w2_d2_3.png)
+
 
 3. **Hybrid Connectivity & Secure Tunneling**
    - **Site-to-Site VPN:** Built a simulated hybrid environment by setting up a Site-to-Site VPN Connection.
@@ -153,3 +148,12 @@ pre: " <b> 1.1. </b> "
 5. **Inter-VPC Connectivity & Security**
    - **VPC Peering:** Successfully established VPC Peering connections between multiple VPCs, allowing private resource sharing across different network segments.
    - **Network Defense:** Hardened network security by updating Network ACLs (NACLs) and enabling Cross-Peer DNS resolution to maintain consistent service discovery across peered networks.
+
+     ![w1_d2_2](/images/1-Worklog/w1_d5_1.png)
+    ![w1_d2_2](/images/1-Worklog/w1_d5_2.png)
+    ![w1_d2_2](/images/1-Worklog/w1_d5_3.png)
+    ![w1_d2_2](/images/1-Worklog/w1_d5_4.png)
+
+    ![w1_d2_2](/images/1-Worklog/w2_d2_1.png)
+   ![w1_d2_2](/images/1-Worklog/w2_d2_2.png)
+   ![w1_d2_2](/images/1-Worklog/w2_d2_3.png)

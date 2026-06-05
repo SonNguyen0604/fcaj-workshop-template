@@ -1,7 +1,7 @@
 ---
 title: "Worklog Tuần 2"
-date: 2024-04-17
-weight: 1
+date: 2026-04-27
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
@@ -41,8 +41,8 @@ pre: " <b> 1.2. </b> "
           </li>
         </ul>
       </td>
-      <td>22/04/2026</td>
-      <td>22/04/2026</td>
+      <td>27/04/2026</td>
+      <td>27/04/2026</td>
       <td><a href="https://000003.awsstudygroup.com/3-prerequisite/">https://000003.awsstudygroup.com/3-prerequisite/</a></td>
     </tr>
     <tr>
@@ -61,8 +61,8 @@ pre: " <b> 1.2. </b> "
           </li>
         </ul>
       </td>
-      <td>23/04/2026</td>
-      <td>23/04/2026</td>
+      <td>28/04/2026</td>
+      <td>28/04/2026</td>
       <td><a href="https://000003.awsstudygroup.com/4-createec2server/">https://000003.awsstudygroup.com/4-createec2server/</a></td>
     </tr>
     <tr>
@@ -79,8 +79,8 @@ pre: " <b> 1.2. </b> "
           </li>
         </ul>
       </td>
-      <td>24/04/2026</td>
-      <td>24/04/2026</td>
+      <td>29/04/2026</td>
+      <td>29/04/2026</td>
       <td><a href="https://000003.awsstudygroup.com/5-vpnsitetosite/">https://000003.awsstudygroup.com/5-vpnsitetosite/</a></td>
     </tr>
     <tr>
@@ -98,8 +98,8 @@ pre: " <b> 1.2. </b> "
           </li>
         </ul>
       </td>
-      <td>25/04/2026</td>
-      <td>25/04/2026</td>
+      <td>30/04/2026</td>
+      <td>30/04/2026</td>
       <td><a href="https://000010.awsstudygroup.com/">https://000010.awsstudygroup.com/</a></td>
     </tr>
     <tr>
@@ -117,8 +117,8 @@ pre: " <b> 1.2. </b> "
           </li>
         </ul>
       </td>
-      <td>26/04/2026</td>
-      <td>26/04/2026</td>
+      <td>01/05/2026</td>
+      <td>01/05/2026</td>
       <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
     </tr>
   </tbody>

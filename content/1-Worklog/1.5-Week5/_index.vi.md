@@ -1,54 +1,179 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-05-18
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
+
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Làm chủ kiến trúc & hiện đại hoá dữ liệu: từ di trú cơ sở dữ liệu đến triển khai Data Lake
+* Kiến trúc NoSQL & phân tích dữ liệu nâng cao: đi sâu vào DynamoDB Design Patterns và xử lý dữ liệu serverless
+* Di trú CSDL: cấu hình, giám sát và xử lý sự cố di trú dữ liệu bằng AWS DMS
+* Data Lake trên AWS: xây dựng data pipelines qua S3 và Glue, phân tích với Athena và trực quan hoá bằng QuickSight
+* DynamoDB nâng cao: triển khai các design patterns NoSQL nâng cao, ứng dụng serverless toàn cầu và kiến trúc event-driven
+* Phân tích chi phí & hiệu năng: đo lường hiệu năng hệ thống và tối ưu chi phí hạ tầng với AWS Glue và Amazon Athena
+* Data Engineering (DataBrew): dùng Cloud9 để upload datasets lên S3, dùng DataBrew để profiling, làm sạch và biến đổi dữ liệu
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+<table>
+  <thead>
+    <tr>
+      <th>Thứ</th>
+      <th>Công việc</th>
+      <th>Ngày bắt đầu</th>
+      <th>Ngày hoàn thành</th>
+      <th>Nguồn tài liệu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>
+        <ul>
+          <li>
+            Tìm hiểu chuyển đổi schema & di trú cơ sở dữ liệu
+            <ul>
+              <li>Chọn DMS source</li>
+              <li>Chọn DMS target</li>
+              <li>Serverless replication</li>
+              <li>Giám sát DMS migrations</li>
+              <li>Troubleshooting migrations với AWS DMS</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>18/05/2026</td>
+      <td>18/05/2026</td>
+      <td>
+        <a href="https://000043.awsstudygroup.com/">https://000043.awsstudygroup.com/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <ul>
+          <li>
+            Data Lake trên AWS
+            <ul>
+              <li>
+                Thu thập và lưu trữ dữ liệu
+                <ul>
+                  <li>Tạo S3 Bucket</li>
+                  <li>Tạo Delivery Stream</li>
+                  <li>Tạo Sample Data</li>
+                </ul>
+              </li>
+              <li>
+                Tạo Data Catalog
+                <ul>
+                  <li>Tạo Glue Crawler</li>
+                  <li>Kiểm tra dữ liệu</li>
+                </ul>
+              </li>
+              <li>Biến đổi dữ liệu</li>
+              <li>
+                Phân tích và trực quan hoá
+                <ul>
+                  <li>Phân tích với Athena</li>
+                  <li>Trực quan hoá với QuickSight</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>19/05/2026</td>
+      <td>19/05/2026</td>
+      <td>
+        <a href="https://000035.awsstudygroup.com/">https://000035.awsstudygroup.com/</a>
+      </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>
+        <ul>
+          <li>
+            Tìm hiểu LHOL: Hands-on Labs for Amazon DynamoDB
+            <ul>
+              <li>Khám phá DynamoDB</li>
+              <li>Khám phá DynamoDB Console</li>
+              <li>Sao lưu (backup)</li>
+            </ul>
+          </li>
+          <li>Tìm hiểu LADV: Advanced Design Patterns for Amazon DynamoDB</li>
+          <li>Tìm hiểu LMR: Build and Deploy a Global Serverless Application with Amazon DynamoDB</li>
+          <li>Tìm hiểu LEDA: Build a Serverless Event Driven Architecture with DynamoDB</li>
+        </ul>
+      </td>
+      <td>20/05/2026</td>
+      <td>20/05/2026</td>
+      <td><a href="https://000039.awsstudygroup.com/">https://000039.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>
+        <ul>
+          <li>
+            Tìm hiểu phân tích chi phí & hiệu năng với AWS Glue và Amazon Athena
+            <ul>
+              <li>Chuẩn bị database</li>
+              <li>Xây dựng database</li>
+              <li>Kiểm tra database</li>
+            </ul>
+          </li>
+          <li>
+            Tìm hiểu phân tích chi phí và hiệu năng sử dụng
+            <ul>
+              <li>Dữ liệu trong bảng</li>
+              <li>Chi phí</li>
+              <li>Gắn tag và phân bổ chi phí</li>
+              <li>Usage</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>21/05/2026</td>
+      <td>21/05/2026</td>
+      <td><a href="https://000040.awsstudygroup.com/">https://000040.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>
+        <ul>
+          <li>Tạo Cloud9 Instance</li>
+          <li>Tải dataset</li>
+          <li>Upload dataset lên S3</li>
+          <li>Thiết lập DataBrew</li>
+          <li>Data Profiling</li>
+          <li>Làm sạch & biến đổi dữ liệu</li>
+        </ul>
+      </td>
+      <td>22/05/2026</td>
+      <td>22/05/2026</td>
+      <td><a href="https://000070.awsstudygroup.com/">https://000070.awsstudygroup.com/</a></td>
+    </tr>
+  </tbody>
+</table>
 
-### Kết quả đạt được tuần 5:
+### THÀNH TỰU TUẦN 5: HIỆN ĐẠI HOÁ DỮ LIỆU, KIẾN TRÚC DATA LAKE & NOSQL NÂNG CAO
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+1. **Chuyển đổi schema & di trú cơ sở dữ liệu**
+   - **Triển khai AWS DMS:** Thiết kế pipeline di trú dữ liệu an toàn bằng cách thiết lập DMS sources và targets vững chắc.
+   - **Replication & xử lý sự cố:** Vận hành serverless replication, cấu hình giám sát di trú theo thời gian thực và làm chủ kỹ thuật troubleshooting cho các đợt cutover CSDL phức tạp.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+2. **Hạ tầng Enterprise Data Lake & phân tích dữ liệu**
+   - **Thu thập & ingest dữ liệu:** Xây dựng ingestion pipelines có khả năng mở rộng, dùng Amazon S3 làm kho lưu trữ tập trung và Amazon Kinesis Delivery Streams.
+   - **Catalog & trực quan hoá:** Điều phối tự động khám phá metadata với AWS Glue Crawlers và tích hợp Amazon Athena với Amazon QuickSight để phân tích serverless và BI.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+3. **Kiến trúc NoSQL nâng cao & thiết kế event-driven**
+   - **DynamoDB Design Patterns:** Đi sâu vào các pattern kiến trúc DynamoDB nâng cao (LHOL, LADV) để đạt scale lớn và tối ưu single-table design.
+   - **Ứng dụng serverless toàn cầu:** Thiết kế ứng dụng phân tán toàn cầu, sẵn sàng cao (LMR) và triển khai workflow event-driven dạng serverless, decoupled (LEDA) dựa trên DynamoDB.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+4. **FinOps & Data Engineering hiện đại**
+   - **Tối ưu chi phí & hiệu năng:** Thực hiện phân tích chi tiết usage với AWS Glue và Athena, tận dụng tagging để phân bổ chi phí chính xác và nâng cao hiệu quả vận hành.
+   - **Biến đổi dữ liệu (DataBrew):** Sử dụng môi trường AWS Cloud9 để điều phối workflow data engineering; triển khai AWS Glue DataBrew cho profiling, làm sạch và chuẩn bị dữ liệu tự động.
 
 

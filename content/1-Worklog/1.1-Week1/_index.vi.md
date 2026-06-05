@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-04-17
+date: 2026-04-17
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -33,8 +33,8 @@ pre: " <b> 1.1. </b> "
           <li>Thiết lập MFA cho tài khoản</li>
         </ul>
       </td>
-      <td>17/04/2026</td>
-      <td>17/04/2026</td>
+      <td>20/04/2026</td>
+      <td>20/04/2026</td>
       <td></td>
     </tr>
     <tr>
@@ -54,8 +54,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>18/04/2026</td>
-      <td>18/04/2026</td>
+      <td>21/04/2026</td>
+      <td>21/04/2026</td>
       <td><a href="https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/">https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/</a></td>
     </tr>
     <tr>
@@ -74,8 +74,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>19/04/2026</td>
-      <td>19/04/2026</td>
+      <td>22/04/2026</td>
+      <td>22/04/2026</td>
       <td><a href="https://000007.awsstudygroup.com/">https://000007.awsstudygroup.com/</a></td>
     </tr>
     <tr>
@@ -91,8 +91,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>20/04/2026</td>
-      <td>20/04/2026</td>
+      <td>23/04/2026</td>
+      <td>23/04/2026</td>
       <td><a href="https://000009.awsstudygroup.com/">https://000009.awsstudygroup.com/</a></td>
     </tr>
     <tr>
@@ -109,8 +109,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>21/04/2026</td>
-      <td>21/04/2026</td>
+      <td>24/04/2026</td>
+      <td>24/04/2026</td>
       <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
     </tr>
   </tbody>

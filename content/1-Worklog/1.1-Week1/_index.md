@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-04-17
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -32,8 +32,8 @@ pre: " <b> 1.1. </b> "
           <li>Set up MFA for your account</li>
         </ul>
       </td>
-      <td>17/04/2026</td>
-      <td>17/04/2026</td>
+      <td>20/04/2026</td>
+      <td>20/04/2026</td>
       <td></td>
     </tr>
     <tr>
@@ -53,8 +53,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>18/04/2026</td>
-      <td>18/04/2026</td>
+      <td>21/04/2026</td>
+      <td>21/04/2026</td>
       <td><a href="https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/">https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/</a></td>
     </tr>
     <tr>
@@ -73,8 +73,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>19/04/2026</td>
-      <td>19/04/2026</td>
+      <td>22/04/2026</td>
+      <td>22/04/2026</td>
       <td><a href="https://000007.awsstudygroup.com/">https://000007.awsstudygroup.com/</a></td>
     </tr>
     <tr>
@@ -90,8 +90,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>20/04/2026</td>
-      <td>20/04/2026</td>
+      <td>23/04/2026</td>
+      <td>23/04/2026</td>
       <td><a href="https://000009.awsstudygroup.com/">https://000009.awsstudygroup.com/</a></td>
     </tr>
     <tr>
@@ -108,8 +108,8 @@ pre: " <b> 1.1. </b> "
           </li>
         </ul>
       </td>
-      <td>21/04/2026</td>
-      <td>21/04/2026</td>
+      <td>24/04/2026</td>
+      <td>24/04/2026</td>
       <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
     </tr>
   </tbody>
@@ -128,8 +128,6 @@ pre: " <b> 1.1. </b> "
      - **Cost & Usage Tracking:** Established Cost Budgets to monitor actual spend and Usage Budgets to track the consumption of specific service resources.
      - **Optimization Planning:** Gained expertise in creating RI (Reserved Instance) Budgets and Savings Plans Budgets to track utilization and maximize cost efficiency.
 
-   ![w1_d2_2](/images/1-Worklog/w1_d2_7.png)
-
 3. **AWS Support & Case Management**
    - Developed a comprehensive understanding of the AWS Support ecosystem to resolve technical and billing inquiries:
      - **Support Plans:** Evaluated different support tiers (Basic, Developer, Business, and Enterprise) and learned how to switch packages based on organizational needs.
@@ -139,6 +137,8 @@ pre: " <b> 1.1. </b> "
    - **Identity Governance:** Configured basic access structures by creating IAM Groups and Admin Users for administrative control.
    - **Role-Based Access Control (RBAC):** Implemented IAM Roles (Admin and Operator) and utilized the Switch Role feature to manage resources securely without using the root account.
 
+    
+   ![w1_d2_2](/images/1-Worklog/w1_d2_7.png)
    ![w1_d2_4](/images/1-Worklog/w1_d2_1.png)
    ![w1_d2_4](/images/1-Worklog/w1_d2_2.png)
    ![w1_d2_4](/images/1-Worklog/w1_d2_4.png)
