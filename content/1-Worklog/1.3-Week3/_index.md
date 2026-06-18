@@ -167,11 +167,4 @@ pre: " <b> 1.3. </b> "
    - **Relational Databases (RDS):** Architected secure database clusters within custom VPC Subnet Groups and performed automated backup/restore operations.
    - **Amazon Lightsail:** Leveraged Lightsail for simplified deployment of WordPress and E-commerce (Prestashop) instances with integrated monitoring and alarms.
 
-   ![w3_d1_1](/images/1-Worklog/w3_d1_1.png)
-   ![w3_d1_2](/images/1-Worklog/w3_d1_2.png)
-   ![w3_d2_3](/images/1-Worklog/w3_d2_3.png)
-   ![w3_d1_3](/images/1-Worklog/w3_d1_3.png)
-   ![w3_d1_4](/images/1-Worklog/w3_d1_4.png)
-   ![w3_d1_5](/images/1-Worklog/w3_d1_5.png)
-   ![w3_d1_6](/images/1-Worklog/w3_d1_6.png)
-   ![w3-d1-1](/images/1-Worklog/w3-d1-1.jpg)
+ 

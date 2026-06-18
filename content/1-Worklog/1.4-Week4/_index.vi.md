@@ -179,11 +179,3 @@ pre: " <b> 1.4. </b> "
 4. **Giải pháp dữ liệu hiệu năng cao & caching**
    - **NoSQL (DynamoDB):** Thiết kế data model có khả năng mở rộng với Amazon DynamoDB; thực hành CRUD, truy vấn nâng cao và indexing, tích hợp với Python.
    - **Tăng tốc in-memory:** Triển khai Amazon ElastiCache clusters để giảm độ trễ ứng dụng; sử dụng AWS SDK cho cấu trúc dữ liệu phức tạp và stream processing.
-
-![w4-d1-1](/images/1-Worklog/w4-d1-1.jpg)
-![w4-d1-2](/images/1-Worklog/w4-d1-2.jpg)
-![w4-d1-3](/images/1-Worklog/w4-d1-3.jpg)
-![w4-d1-3](/images/1-Worklog/w4-d2-1.jpg)
-![w4-d2-2](/images/1-Worklog/w4-d2-2.jpg)
-![w4-d1-3](/images/1-Worklog/w4-d2-3.jpg)
-![w4-d1-3](/images/1-Worklog/w4-d2-4.jpg)

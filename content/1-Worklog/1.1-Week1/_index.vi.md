@@ -122,7 +122,6 @@ pre: " <b> 1.1. </b> "
    - **Tài khoản & Bảo mật:** Khởi tạo thành công AWS Free Tier account và bật Multi-Factor Authentication (MFA) để bảo vệ tài khoản root.
    - **Tổng quan dịch vụ:** Nắm kiến thức nền tảng về các dịch vụ cốt lõi, bao gồm EC2, Amazon Bedrock, Aurora & RDS và AWS Lambda.
 
-   ![w1_d2_1](/images/1-Worklog/w1_d2_1.png)
 
 2. **Quản lý chi phí AWS & Lập ngân sách**
    - Làm chủ công cụ và chiến lược theo dõi/kiểm soát chi tiêu cloud với AWS Budgets:
@@ -130,19 +129,16 @@ pre: " <b> 1.1. </b> "
      - **Theo dõi Cost & Usage:** Tạo Cost Budgets để theo dõi chi tiêu thực tế và Usage Budgets để theo dõi mức sử dụng tài nguyên theo dịch vụ.
      - **Lập kế hoạch tối ưu:** Tạo RI (Reserved Instance) Budgets và Savings Plans Budgets để theo dõi mức sử dụng và tối ưu hiệu quả chi phí.
 
-   ![w1_d2_2](/images/1-Worklog/w1_d2_2.png)
 
 3. **AWS Support & Quản lý Case**
    - Hiểu tổng quan hệ sinh thái AWS Support để xử lý các vấn đề kỹ thuật và billing:
      - **Support Plans:** So sánh các gói (Basic, Developer, Business, Enterprise) và cách chuyển đổi gói theo nhu cầu.
      - **Quản lý yêu cầu:** Thực hành tạo support case, chọn mức Severity phù hợp và trao đổi hiệu quả với kỹ sư hỗ trợ AWS.
 
-   ![w1_d2_3](/images/1-Worklog/w1_d2_3.png)
 
 4. **IAM cơ bản (Identity and Access Management)**
    - **Quản trị định danh:** Thiết lập cấu trúc quyền cơ bản bằng cách tạo IAM Groups và Admin Users phục vụ quản trị.
    - **Kiểm soát truy cập theo vai trò (RBAC):** Tạo IAM Roles (Admin, Operator) và sử dụng tính năng Switch Role để quản lý tài nguyên an toàn mà không cần dùng tài khoản root.
 
-   ![w1_d2_4](/images/1-Worklog/w1_d2_4.png)
 
 

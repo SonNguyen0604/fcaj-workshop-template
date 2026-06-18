@@ -131,19 +131,12 @@ pre: " <b> 1.2. </b> "
    - **Điều hướng lưu lượng:** Cấu hình Route Tables và Security Groups để quản lý traffic vào/ra, đảm bảo kiểm soát bảo mật chi tiết theo từng instance.
    - **Giám sát:** Bật VPC Flow Logs để thu thập và phân tích thông tin IP traffic phục vụ troubleshooting và security auditing.
 
-     ![w1_d5_1](/images/1-Worklog/w1_d5_1.png)
-     ![w1_d5_2](/images/1-Worklog/w1_d5_2.png)
-     ![w1_d5_3](/images/1-Worklog/w1_d5_3.png)
-     ![w1_d5_4](/images/1-Worklog/w1_d5_4.png)
 
 2. **EC2 Compute & giải pháp kết nối**
    - **Triển khai instance:** Khởi tạo và quản lý Amazon EC2 instances, xác minh kết nối qua VS Code và EC2 Instance Connect Endpoints.
    - **NAT (Network Address Translation):** Triển khai NAT Gateways để cho phép instances trong private subnets truy cập internet (cập nhật, tải gói...) trong khi vẫn tránh inbound traffic không mong muốn.
    - **Quan sát hệ thống:** Tích hợp CloudWatch Monitoring & Alerting để theo dõi hiệu năng và thiết lập cảnh báo tự động theo trạng thái hệ thống.
 
-     ![w2_d2_1](/images/1-Worklog/w2_d2_1.png)
-     ![w2_d2_2](/images/1-Worklog/w2_d2_2.png)
-     ![w2_d2_3](/images/1-Worklog/w2_d2_3.png)
 
 3. **Kết nối hybrid & đường hầm bảo mật**
    - **Site-to-Site VPN:** Xây dựng mô phỏng môi trường hybrid bằng cách thiết lập Site-to-Site VPN Connection.

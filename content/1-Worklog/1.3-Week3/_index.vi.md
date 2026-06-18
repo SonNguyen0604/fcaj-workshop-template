@@ -167,12 +167,3 @@ pre: " <b> 1.3. </b> "
 4. **CSDL được quản lý & triển khai nhanh**
    - **CSDL quan hệ (RDS):** Thiết kế cụm cơ sở dữ liệu an toàn trong custom VPC Subnet Groups và thực hiện backup/restore tự động.
    - **Amazon Lightsail:** Sử dụng Lightsail để triển khai đơn giản WordPress và các instance E-commerce (Prestashop), kèm monitoring và alarms.
-
-   ![w3_d1_1](/images/1-Worklog/w3_d1_1.png)
-   ![w3_d1_2](/images/1-Worklog/w3_d1_2.png)
-   ![w3_d2_3](/images/1-Worklog/w3_d2_3.png)
-   ![w3_d1_3](/images/1-Worklog/w3_d1_3.png)
-   ![w3_d1_4](/images/1-Worklog/w3_d1_4.png)
-   ![w3_d1_5](/images/1-Worklog/w3_d1_5.png)
-   ![w3_d1_6](/images/1-Worklog/w3_d1_6.png)
-   ![w3-d1-1](/images/1-Worklog/w3-d1-1.jpg)

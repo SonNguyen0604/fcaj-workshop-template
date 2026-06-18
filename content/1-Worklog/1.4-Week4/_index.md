@@ -176,11 +176,3 @@ pre: " <b> 1.4. </b> "
    - **NoSQL Excellence (DynamoDB):** Engineered scalable data models using Amazon DynamoDB, mastering CRUD operations, advanced querying, and table indexing with Python integration.
    - **In-Memory Acceleration:** Deployed Amazon ElastiCache clusters to optimize application latency, utilizing AWS SDK for complex data structures and stream processing.
 
-![w4-d1-1](/images/1-Worklog/w4-d1-1.jpg)
-![w4-d1-2](/images/1-Worklog/w4-d1-2.jpg)
-![w4-d1-3](/images/1-Worklog/w4-d1-3.jpg)
-![w4-d1-3](/images/1-Worklog/w4-d2-1.jpg)
-![w4-d2-2](/images/1-Worklog/w4-d2-2.jpg)
-![w4-d1-3](/images/1-Worklog/w4-d2-3.jpg)
-![w4-d1-3](/images/1-Worklog/w4-d2-4.jpg)
-

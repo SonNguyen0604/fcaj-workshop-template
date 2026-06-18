@@ -149,11 +149,3 @@ pre: " <b> 1.2. </b> "
    - **VPC Peering:** Successfully established VPC Peering connections between multiple VPCs, allowing private resource sharing across different network segments.
    - **Network Defense:** Hardened network security by updating Network ACLs (NACLs) and enabling Cross-Peer DNS resolution to maintain consistent service discovery across peered networks.
 
-     ![w1_d2_2](/images/1-Worklog/w1_d5_1.png)
-    ![w1_d2_2](/images/1-Worklog/w1_d5_2.png)
-    ![w1_d2_2](/images/1-Worklog/w1_d5_3.png)
-    ![w1_d2_2](/images/1-Worklog/w1_d5_4.png)
-
-    ![w1_d2_2](/images/1-Worklog/w2_d2_1.png)
-   ![w1_d2_2](/images/1-Worklog/w2_d2_2.png)
-   ![w1_d2_2](/images/1-Worklog/w2_d2_3.png)

@@ -1,122 +1,124 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
+date: 2026-06-16
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-# Getting Started with Healthcare Data Lakes: Using Microservices
+# From Hourly Caching to Real-Time Pricing: How Samsung Solved Price Synchronization with AWS Lambda Response Streaming
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+In e-commerce, product pricing is one of the most critical pieces of data. If the price displayed on the product page differs from the price at checkout, the customer experience can be severely impacted.
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+Recently, I read a very interesting post from the AWS Architecture Blog about how Samsung improved the pricing system on Samsung.com using AWS Lambda Response Streaming and Amazon CloudFront.
 
----
-
-## Architecture Guidance
-
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
-
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
-
-**The solution architecture is now as follows:**
-
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+This is an excellent case study on choosing the right architecture instead of just focusing on optimizing performance.
 
 ---
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+## The Problem
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+Samsung.com is Samsung's direct sales channel, offering a wide range of product lines such as phones, TVs, home appliances, and accessories.
 
----
+During major events like Black Friday, a product listing page may need to display the prices of more than 30 different SKUs at the same time.
 
-## Technology Choices and Communication Scope
+Each product has multiple variants:
+- Color
+- Memory version
+- Promotional programs
+- Region-specific offers
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+This makes querying prices in real-time a major challenge.
 
 ---
 
-## The Pub/Sub Hub
+## Legacy Architecture and Issues Arising
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+In the legacy architecture, Samsung used a Data Aggregation layer between the Pricing Engine and CloudFront.
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+A Cron Job would run every hour to:
+1. Fetch all product data from the Pricing Engine.
+2. Pre-calculate all possible price combinations.
+3. Save the results into the cache to serve users.
 
----
+This model helped speed up data read times but created two major problems.
 
-## Core Microservice
+### 1. Permutation Explosion
+As the number of products and variants increased, the number of price combinations grew exponentially.
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+For example: 30 products × multiple versions × multiple promotional programs could generate thousands or tens of thousands of records that needed to be pre-calculated.
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+As a result, the system consumed a lot of storage and processing resources for data that might never be accessed by users.
 
----
+### 2. Synchronization Lag
+This is the more serious issue.
 
-## Front Door Microservice
+Because the Cron Job only ran once an hour, the data in the cache could lag behind real-world data by up to 60 minutes.
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+If a Flash Sale program started at 10:05, customers could still see the old price until the next Cron Job ran at 11:00.
+
+Consequences:
+- Inaccurate price display
+- Customers surprised at checkout
+- Loss of trust in the system
+- Impact on revenue
 
 ---
 
-## Staging ER7 Microservice
+## New Solution with AWS Lambda Response Streaming
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+Instead of continuing to optimize the cache, Samsung decided to completely eliminate the Data Aggregation layer.
+
+The new architecture is built on the principle: **Always fetch data from the primary source (Source of Truth) at the time the user makes the request.**
+
+Operational workflow:
+1. The user sends a request to get the product price.
+2. Amazon CloudFront checks the cache at the Edge Location.
+3. If a cache miss occurs, the request is forwarded to AWS Lambda.
+4. Lambda performs a fan-out and sends multiple requests in parallel to the Pricing Engine.
+5. The results are streamed back to the user as soon as the data is returned.
+6. CloudFront continues to cache the results for a short period to optimize performance.
 
 ---
 
-## New Features in the Solution
+## Why AWS Lambda Response Streaming fits?
 
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Normally, Lambda will wait to finish processing all data before returning a response. This increases the wait time when aggregating data from multiple different sources.
+
+With Lambda Response Streaming:
+- Data is sent back as soon as there are results
+- Reduces Time To First Byte (TTFB)
+- Users receive responses sooner
+- No need to build a complex intermediate cache layer
+
+This is the key differentiator that helped Samsung ensure both performance and the accuracy of pricing data.
+
+---
+
+## AWS Services Featured in the Architecture
+
+- Amazon CloudFront
+- AWS Lambda
+- Lambda Response Streaming
+- Lambda Function URL
+- Provisioned Concurrency
+
+Although the number of services is not large, the way these services are combined helped solve a real-world problem at a massive scale.
+
+---
+
+## Lessons I Learned from This Case Study
+
+The most interesting thing does not lie in Lambda Response Streaming itself, but in the architectural mindset.
+
+Caching is often seen as the solution to performance problems. However, in problems where data accuracy is more important than retrieval speed, caching can sometimes become the root cause of business logic errors.
+
+Samsung's case study shows that:
+- Adding a cache is not always the right direction.
+- The Source of Truth needs to be prioritized in systems related to selling prices.
+- Serverless can effectively solve real-time data aggregation problems.
+- A simpler architecture can sometimes bring better results than a system with multiple intermediate layers.
+
+Original post: https://aws.amazon.com/vi/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/
+
+![Kiến trúc cũ của Samsung gây ra vấn đề trễ đồng bộ](/images/3-Blog/1.jpg)
+![Kiến trúc mới sử dụng AWS Lambda Response Streaming của Samsung](/images/3-Blog/2.jpg)

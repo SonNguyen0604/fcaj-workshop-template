@@ -137,10 +137,5 @@ pre: " <b> 1.1. </b> "
    - **Identity Governance:** Configured basic access structures by creating IAM Groups and Admin Users for administrative control.
    - **Role-Based Access Control (RBAC):** Implemented IAM Roles (Admin and Operator) and utilized the Switch Role feature to manage resources securely without using the root account.
 
-    
-   ![w1_d2_2](/images/1-Worklog/w1_d2_7.png)
-   ![w1_d2_4](/images/1-Worklog/w1_d2_1.png)
-   ![w1_d2_4](/images/1-Worklog/w1_d2_2.png)
-   ![w1_d2_4](/images/1-Worklog/w1_d2_4.png)
 
   

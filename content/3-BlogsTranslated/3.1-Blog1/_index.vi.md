@@ -1,122 +1,124 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
+date: 2026-06-16
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-# Bắt đầu với healthcare data lakes: Sử dụng microservices
+# Từ Cache Theo Giờ Đến Real-Time Pricing: Samsung Giải Quyết Bài Toán Đồng Bộ Giá Với AWS Lambda Response Streaming
 
-Các data lake có thể giúp các bệnh viện và cơ sở y tế chuyển dữ liệu thành những thông tin chi tiết về doanh nghiệp và duy trì hoạt động kinh doanh liên tục, đồng thời bảo vệ quyền riêng tư của bệnh nhân. **Data lake** là một kho lưu trữ tập trung, được quản lý và bảo mật để lưu trữ tất cả dữ liệu của bạn, cả ở dạng ban đầu và đã xử lý để phân tích. data lake cho phép bạn chia nhỏ các kho chứa dữ liệu và kết hợp các loại phân tích khác nhau để có được thông tin chi tiết và đưa ra các quyết định kinh doanh tốt hơn.
+Trong thương mại điện tử, giá sản phẩm là một trong những dữ liệu quan trọng nhất. Chỉ cần giá hiển thị trên trang sản phẩm khác với giá tại bước thanh toán, trải nghiệm khách hàng có thể bị ảnh hưởng nghiêm trọng.
 
-Bài đăng trên blog này là một phần của loạt bài lớn hơn về việc bắt đầu cài đặt data lake dành cho lĩnh vực y tế. Trong bài đăng blog cuối cùng của tôi trong loạt bài, *“Bắt đầu với data lake dành cho lĩnh vực y tế: Đào sâu vào Amazon Cognito”*, tôi tập trung vào các chi tiết cụ thể của việc sử dụng Amazon Cognito và Attribute Based Access Control (ABAC) để xác thực và ủy quyền người dùng trong giải pháp data lake y tế. Trong blog này, tôi trình bày chi tiết cách giải pháp đã phát triển ở cấp độ cơ bản, bao gồm các quyết định thiết kế mà tôi đã đưa ra và các tính năng bổ sung được sử dụng. Bạn có thể truy cập các code samples cho giải pháp tại Git repo này để tham khảo.
+Gần đây mình đọc được một bài chia sẻ khá thú vị từ AWS Architecture Blog về cách Samsung cải tiến hệ thống định giá trên Samsung.com bằng AWS Lambda Response Streaming và Amazon CloudFront.
 
----
-
-## Hướng dẫn kiến trúc
-
-Thay đổi chính kể từ lần trình bày cuối cùng của kiến trúc tổng thể là việc tách dịch vụ đơn lẻ thành một tập hợp các dịch vụ nhỏ để cải thiện khả năng bảo trì và tính linh hoạt. Việc tích hợp một lượng lớn dữ liệu y tế khác nhau thường yêu cầu các trình kết nối chuyên biệt cho từng định dạng; bằng cách giữ chúng được đóng gói riêng biệt với microservices, chúng ta có thể thêm, xóa và sửa đổi từng trình kết nối mà không ảnh hưởng đến những kết nối khác. Các microservices được kết nối rời thông qua tin nhắn publish/subscribe tập trung trong cái mà tôi gọi là “pub/sub hub”.
-
-Giải pháp này đại diện cho những gì tôi sẽ coi là một lần lặp nước rút hợp lý khác từ last post của tôi. Phạm vi vẫn được giới hạn trong việc nhập và phân tích cú pháp đơn giản của các **HL7v2 messages** được định dạng theo **Quy tắc mã hóa 7 (ER7)** thông qua giao diện REST.
-
-**Kiến trúc giải pháp bây giờ như sau:**
-
-> *Hình 1. Kiến trúc tổng thể; những ô màu thể hiện những dịch vụ riêng biệt.*
+Đây là một case study rất hay về việc lựa chọn kiến trúc phù hợp thay vì chỉ tập trung vào tối ưu hiệu năng.
 
 ---
 
-Mặc dù thuật ngữ *microservices* có một số sự mơ hồ cố hữu, một số đặc điểm là chung:  
-- Chúng nhỏ, tự chủ, kết hợp rời rạc  
-- Có thể tái sử dụng, giao tiếp thông qua giao diện được xác định rõ  
-- Chuyên biệt để giải quyết một việc  
-- Thường được triển khai trong **event-driven architecture**
+## Bài toán
 
-Khi xác định vị trí tạo ranh giới giữa các microservices, cần cân nhắc:  
-- **Nội tại**: công nghệ được sử dụng, hiệu suất, độ tin cậy, khả năng mở rộng  
-- **Bên ngoài**: chức năng phụ thuộc, tần suất thay đổi, khả năng tái sử dụng  
-- **Con người**: quyền sở hữu nhóm, quản lý *cognitive load*
+Samsung.com là kênh bán hàng trực tiếp của Samsung, cung cấp nhiều dòng sản phẩm như điện thoại, TV, thiết bị gia dụng và phụ kiện.
 
----
+Trong các sự kiện lớn như Black Friday, một trang danh sách sản phẩm có thể phải hiển thị giá của hơn 30 SKU khác nhau cùng lúc.
 
-## Lựa chọn công nghệ và phạm vi giao tiếp
+Mỗi sản phẩm lại có nhiều biến thể:
+- Màu sắc
+- Phiên bản bộ nhớ
+- Chương trình khuyến mãi
+- Ưu đãi theo khu vực
 
-| Phạm vi giao tiếp                        | Các công nghệ / mô hình cần xem xét                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Trong một microservice                   | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Giữa các microservices trong một dịch vụ | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Giữa các dịch vụ                         | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+Điều này khiến việc truy vấn giá theo thời gian thực trở thành một thách thức lớn.
 
 ---
 
-## The pub/sub hub
+## Kiến trúc cũ và vấn đề phát sinh
 
-Việc sử dụng kiến trúc **hub-and-spoke** (hay message broker) hoạt động tốt với một số lượng nhỏ các microservices liên quan chặt chẽ.  
-- Mỗi microservice chỉ phụ thuộc vào *hub*  
-- Kết nối giữa các microservice chỉ giới hạn ở nội dung của message được xuất  
-- Giảm số lượng synchronous calls vì pub/sub là *push* không đồng bộ một chiều
+Trong kiến trúc cũ, Samsung sử dụng một lớp Data Aggregation nằm giữa Pricing Engine và CloudFront.
 
-Nhược điểm: cần **phối hợp và giám sát** để tránh microservice xử lý nhầm message.
+Một Cron Job sẽ chạy mỗi giờ để:
+1. Lấy toàn bộ dữ liệu sản phẩm từ Pricing Engine.
+2. Tính toán trước các tổ hợp giá có thể xảy ra.
+3. Lưu kết quả vào cache để phục vụ người dùng.
 
----
+Mô hình này giúp tăng tốc độ đọc dữ liệu nhưng lại tạo ra hai vấn đề lớn.
 
-## Core microservice
+### 1. Permutation Explosion
+Khi số lượng sản phẩm và biến thể tăng lên, số lượng tổ hợp giá tăng theo cấp số nhân.
 
-Cung cấp dữ liệu nền tảng và lớp truyền thông, gồm:  
-- **Amazon S3** bucket cho dữ liệu  
-- **Amazon DynamoDB** cho danh mục dữ liệu  
-- **AWS Lambda** để ghi message vào data lake và danh mục  
-- **Amazon SNS** topic làm *hub*  
-- **Amazon S3** bucket cho artifacts như mã Lambda
+Ví dụ: 30 sản phẩm × nhiều phiên bản × nhiều chương trình khuyến mãi có thể tạo ra hàng nghìn hoặc hàng chục nghìn bản ghi cần được tính toán trước.
 
-> Chỉ cho phép truy cập ghi gián tiếp vào data lake qua hàm Lambda → đảm bảo nhất quán.
+Kết quả là hệ thống tiêu tốn nhiều tài nguyên lưu trữ và xử lý cho những dữ liệu có thể không bao giờ được người dùng truy cập.
 
----
+### 2. Synchronization Lag
+Đây là vấn đề nghiêm trọng hơn.
 
-## Front door microservice
+Vì Cron Job chỉ chạy mỗi giờ một lần nên dữ liệu trong cache có thể chậm hơn dữ liệu thực tế tới 60 phút.
 
-- Cung cấp API Gateway để tương tác REST bên ngoài  
-- Xác thực & ủy quyền dựa trên **OIDC** thông qua **Amazon Cognito**  
-- Cơ chế *deduplication* tự quản lý bằng DynamoDB thay vì SNS FIFO vì:
-  1. SNS deduplication TTL chỉ 5 phút
-  2. SNS FIFO yêu cầu SQS FIFO
-  3. Chủ động báo cho sender biết message là bản sao
+Nếu một chương trình Flash Sale bắt đầu lúc 10:05 thì khách hàng vẫn có thể nhìn thấy giá cũ cho đến khi Cron Job tiếp theo chạy vào 11:00.
+
+Hệ quả:
+- Giá hiển thị không chính xác
+- Khách hàng bất ngờ khi thanh toán
+- Mất niềm tin vào hệ thống
+- Ảnh hưởng doanh thu
 
 ---
 
-## Staging ER7 microservice
+## Giải pháp mới với AWS Lambda Response Streaming
 
-- Lambda “trigger” đăng ký với pub/sub hub, lọc message theo attribute  
-- Step Functions Express Workflow để chuyển ER7 → JSON  
-- Hai Lambda:
-  1. Sửa format ER7 (newline, carriage return)
-  2. Parsing logic  
-- Kết quả hoặc lỗi được đẩy lại vào pub/sub hub
+Thay vì tiếp tục tối ưu cache, Samsung quyết định loại bỏ hoàn toàn tầng Data Aggregation.
+
+Kiến trúc mới được xây dựng dựa trên nguyên tắc: **Luôn lấy dữ liệu từ nguồn chính (Source of Truth) tại thời điểm người dùng gửi yêu cầu.**
+
+Quy trình hoạt động:
+1. Người dùng gửi yêu cầu lấy giá sản phẩm.
+2. Amazon CloudFront kiểm tra cache tại Edge Location.
+3. Nếu cache miss, request được chuyển đến AWS Lambda.
+4. Lambda thực hiện fan-out và gửi song song nhiều request tới Pricing Engine.
+5. Kết quả được stream ngay về phía người dùng khi có dữ liệu trả về.
+6. CloudFront tiếp tục cache kết quả trong thời gian ngắn để tối ưu hiệu năng.
 
 ---
 
-## Tính năng mới trong giải pháp
+## Vì sao AWS Lambda Response Streaming phù hợp?
 
-### 1. AWS CloudFormation cross-stack references
-Ví dụ *outputs* trong core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Thông thường, Lambda sẽ đợi xử lý xong toàn bộ dữ liệu rồi mới trả về response. Điều này làm tăng thời gian chờ khi cần tổng hợp dữ liệu từ nhiều nguồn khác nhau.
+
+Với Lambda Response Streaming:
+- Dữ liệu được gửi về ngay khi có kết quả
+- Giảm Time To First Byte (TTFB)
+- Người dùng nhận được phản hồi sớm hơn
+- Không cần xây dựng thêm lớp cache trung gian phức tạp
+
+Đây là điểm khác biệt quan trọng giúp Samsung vừa đảm bảo hiệu năng vừa giữ được tính chính xác của dữ liệu giá.
+
+---
+
+## Những dịch vụ AWS xuất hiện trong kiến trúc
+
+- Amazon CloudFront
+- AWS Lambda
+- Lambda Response Streaming
+- Lambda Function URL
+- Provisioned Concurrency
+
+Mặc dù số lượng dịch vụ không nhiều, nhưng cách kết hợp các dịch vụ này đã giúp giải quyết một bài toán thực tế ở quy mô rất lớn.
+
+---
+
+## Bài học mình rút ra từ case study này
+
+Điều thú vị nhất không nằm ở Lambda Response Streaming mà nằm ở tư duy kiến trúc.
+
+Cache thường được xem là giải pháp cho các vấn đề hiệu năng. Tuy nhiên, trong những bài toán mà tính chính xác của dữ liệu quan trọng hơn tốc độ truy xuất, cache đôi khi lại trở thành nguyên nhân gây ra lỗi nghiệp vụ.
+
+Case study của Samsung cho thấy rằng:
+- Không phải lúc nào thêm cache cũng là hướng đi đúng.
+- Source of Truth cần được ưu tiên trong các hệ thống liên quan đến giá bán.
+- Serverless có thể giải quyết hiệu quả các bài toán tổng hợp dữ liệu theo thời gian thực.
+- Một kiến trúc đơn giản hơn đôi khi lại mang lại kết quả tốt hơn một hệ thống nhiều tầng trung gian.
+
+Bài viết gốc: https://aws.amazon.com/vi/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/
+
+![Kiến trúc cũ của Samsung gây ra vấn đề trễ đồng bộ](/images/3-Blog/1.jpg)
+![Kiến trúc mới sử dụng AWS Lambda Response Streaming của Samsung](/images/3-Blog/2.jpg)
