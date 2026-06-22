@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 1"
-date: 2026-04-17
+date: 2026-06-22
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -8,8 +8,8 @@ pre: " <b> 1.1. </b> "
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Nắm kiến thức AWS cơ bản và cách sử dụng AWS Console & AWS CLI.
+* Kết nối, thành lập nhóm 5 thành viên và thống nhất quy chế làm việc chạy nước rút trong 5 tuần.
+* Nghiên cứu tổng quan đề tài High Availability (HA) trên AWS và thiết lập hoàn chỉnh hạ tầng website báo cáo song ngữ.
 
 ### Các công việc cần triển khai trong tuần này:
 <table>
@@ -27,118 +27,75 @@ pre: " <b> 1.1. </b> "
       <td>2</td>
       <td>
         <ul>
-          <li>Làm quen với các thành viên FCJ</li>
-          <li>Đọc và ghi chú các nội quy, quy định tại đơn vị thực tập</li>
-          <li>Tạo AWS Free Tier account</li>
-          <li>Thiết lập MFA cho tài khoản</li>
+          <li>Tham gia buổi định hướng (Kick-off) chương trình thực tập Cloud Journey tại AWS Vietnam.</li>
+          <li>Làm quen với các thành viên trong nhóm và thống nhất chọn Đề tài 2: Đảm bảo tính sẵn sàng cao (High Availability) trên AWS.</li>
         </ul>
       </td>
-      <td>20/04/2026</td>
-      <td>20/04/2026</td>
-      <td></td>
+      <td>22/06/2026</td>
+      <td>22/06/2026</td>
+      <td>Tài liệu chương trình FCAJ</td>
     </tr>
     <tr>
       <td>3</td>
       <td>
         <ul>
-          <li>Nhận đủ $200 Credit</li>
-          <li>
-            Tìm hiểu các dịch vụ AWS để nhận $100
-            <ul>
-              <li>EC2</li>
-              <li>Amazon Bedrock</li>
-              <li>Aurora &amp; RDS</li>
-              <li>AWS Budgets</li>
-              <li>AWS Lambda</li>
-            </ul>
-          </li>
+          <li>Phân chia vai trò chính thức trong nhóm: Bản thân đảm nhận vai trò Quản lý tài liệu (Technical Writer) kiêm điều phối tiến độ.</li>
+          <li>Nghiên cứu lý thuyết nền tảng về kiến trúc High Availability, Fault Tolerance và các thành phần cốt lõi (VPC Multi-AZ, ALB, ASG, RDS Multi-AZ).</li>
         </ul>
       </td>
-      <td>21/04/2026</td>
-      <td>21/04/2026</td>
-      <td><a href="https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/">https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/</a></td>
+      <td>23/06/2026</td>
+      <td>23/06/2026</td>
+      <td><a href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected Framework (Reliability Pillar)</a></td>
     </tr>
     <tr>
       <td>4</td>
       <td>
         <ul>
-          <li>
-            Tìm hiểu Cost Management với AWS Budgets
-            <ul>
-              <li>Tạo Budget</li>
-              <li>Tạo Cost Budget</li>
-              <li>Tạo Usage Budget</li>
-              <li>Tạo RI Budget</li>
-              <li>Tạo Savings Plans Budget</li>
-            </ul>
-          </li>
+          <li>Thực hiện Fork kho mã nguồn mẫu <code>fcaj-workshop-template</code> từ tài khoản mentor về tài khoản GitHub cá nhân.</li>
+          <li>Kiểm tra cấu trúc các thư mục nội dung từ mục 1 đến mục 7 để chuẩn bị cho việc thay máu dữ liệu của nhóm.</li>
         </ul>
       </td>
-      <td>22/04/2026</td>
-      <td>22/04/2026</td>
-      <td><a href="https://000007.awsstudygroup.com/">https://000007.awsstudygroup.com/</a></td>
+      <td>24/06/2026</td>
+      <td>24/06/2026</td>
+      <td><a href="https://github.com/hdnkhoi-dev/fcaj-workshop-template">FCAJ Workshop Template</a></td>
     </tr>
     <tr>
       <td>5</td>
       <td>
         <ul>
-          <li>
-            Tìm hiểu AWS Support Plans
-            <ul>
-              <li>Truy cập AWS Support</li>
-              <li>Quản lý yêu cầu hỗ trợ</li>
-            </ul>
-          </li>
+          <li>Chỉnh sửa và cập nhật thông tin cá nhân của Nguyễn Duy Sơn (SGU - Hệ thống thông tin) vào trang chủ Portfolio.</li>
+          <li>Cấu hình đồng bộ hóa trang chủ bằng cả 2 ngôn ngữ (Tiếng Anh và Tiếng Việt) để đáp ứng yêu cầu bắt buộc của dự án.</li>
         </ul>
       </td>
-      <td>23/04/2026</td>
-      <td>23/04/2026</td>
-      <td><a href="https://000009.awsstudygroup.com/">https://000009.awsstudygroup.com/</a></td>
+      <td>25/06/2026</td>
+      <td>25/06/2026</td>
+      <td>Tài liệu hướng dẫn Hugo Framework</td>
     </tr>
     <tr>
       <td>6</td>
       <td>
         <ul>
-          <li>
-            Tìm hiểu IAM cơ bản
-            <ul>
-              <li>Tạo IAM Group và Users (Admin Group, Admin User, đăng nhập Admin User)</li>
-              <li>Tạo IAM Role (Admin Role, OperatorUser)</li>
-              <li>Switch Role</li>
-            </ul>
-          </li>
+          <li>Họp nhóm trực tuyến để thống nhất sơ đồ kiến trúc hệ thống HA dự kiến (Multi-AZ, Load Balancer, EC2, RDS, S3).</li>
+          <li>Tổng hợp dữ liệu tuần 1 từ các thành viên, hoàn thiện file Worklog tuần 1 và lên bộ khung sơ khởi cho phần 2-Proposal.</li>
         </ul>
       </td>
-      <td>24/04/2026</td>
-      <td>24/04/2026</td>
-      <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
+      <td>26/06/2026</td>
+      <td>26/06/2026</td>
+      <td>AWS Study Group Documents</td>
     </tr>
   </tbody>
 </table>
 
-### KẾT QUẢ TUẦN 1: NỀN TẢNG AWS & QUẢN LÝ CHI PHÍ
+### KẾT QUẢ TUẦN 1: KHỞI TẠO ĐỘI NGŨ & NỀN TẢNG BÁO CÁO
 
-1. **Kiến thức nền tảng Cloud & Thiết lập ban đầu**
-   - **Tài khoản & Bảo mật:** Khởi tạo thành công AWS Free Tier account và bật Multi-Factor Authentication (MFA) để bảo vệ tài khoản root.
-   - **Tổng quan dịch vụ:** Nắm kiến thức nền tảng về các dịch vụ cốt lõi, bao gồm EC2, Amazon Bedrock, Aurora & RDS và AWS Lambda.
+1. **Gắn kết đội ngũ & Phân chia vai trò**
+   - Thành lập thành công nhóm 5 thành viên với tinh thần hợp tác cao.
+   - Định hình rõ ràng trách nhiệm cá nhân: Bản thân phụ trách toàn bộ hạ tầng tài liệu, website portfolio và dịch thuật song ngữ, giải phóng áp lực viết báo cáo cho các thành viên chuyên trách kỹ thuật.
 
+2. **Thiết lập nền tảng tài liệu (GitHub Portfolio)**
+   - Làm chủ công cụ Git/GitHub ở mức độ cơ bản thông qua thao tác Fork và cấu hình file Markdown.
+   - Hoàn thành việc cá nhân hóa trang chủ báo cáo thực tập song ngữ mà không làm lỗi cấu trúc định tuyến của template gốc.
 
-2. **Quản lý chi phí AWS & Lập ngân sách**
-   - Làm chủ công cụ và chiến lược theo dõi/kiểm soát chi tiêu cloud với AWS Budgets:
-     - **Tạo Budget & Cảnh báo:** Thiết lập các budget tuỳ chỉnh và cấu hình email cảnh báo tự động khi chi tiêu vượt ngưỡng.
-     - **Theo dõi Cost & Usage:** Tạo Cost Budgets để theo dõi chi tiêu thực tế và Usage Budgets để theo dõi mức sử dụng tài nguyên theo dịch vụ.
-     - **Lập kế hoạch tối ưu:** Tạo RI (Reserved Instance) Budgets và Savings Plans Budgets để theo dõi mức sử dụng và tối ưu hiệu quả chi phí.
-
-
-3. **AWS Support & Quản lý Case**
-   - Hiểu tổng quan hệ sinh thái AWS Support để xử lý các vấn đề kỹ thuật và billing:
-     - **Support Plans:** So sánh các gói (Basic, Developer, Business, Enterprise) và cách chuyển đổi gói theo nhu cầu.
-     - **Quản lý yêu cầu:** Thực hành tạo support case, chọn mức Severity phù hợp và trao đổi hiệu quả với kỹ sư hỗ trợ AWS.
-
-
-4. **IAM cơ bản (Identity and Access Management)**
-   - **Quản trị định danh:** Thiết lập cấu trúc quyền cơ bản bằng cách tạo IAM Groups và Admin Users phục vụ quản trị.
-   - **Kiểm soát truy cập theo vai trò (RBAC):** Tạo IAM Roles (Admin, Operator) và sử dụng tính năng Switch Role để quản lý tài nguyên an toàn mà không cần dùng tài khoản root.
-
-
-
+3. **Thống nhất kiến trúc & Kế hoạch hành động**
+   - Toàn đội đạt được sự đồng thuận về mặt kỹ thuật đối với sơ đồ kiến trúc High Availability tổng quan.
+   - Thiết lập thành công timeline rút gọn 5 tuần (kết thúc vào cuối tháng 7) để kịp tiến độ nghiệm thu dự án.
