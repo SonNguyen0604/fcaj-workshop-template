@@ -2,15 +2,24 @@
 title: "Báo cáo thực tập"
 ---
 
+# "Internship Report"
 ### Thông tin sinh viên:
 * **Họ và tên:** Nguyễn Duy Sơn
+  
 * **Số điện thoại:** 0928342484
+  
 * **Email:** nguyenduyson3009@gmail.com
+  
 * **Trường:** Đại học Sài Gòn (SGU)
+  
 * **Chuyên ngành:** Hệ thống thông tin
-* **Lớp:** DCT1223  
+  
+* **Lớp:** DCT1223
+
 * **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+
 * **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
+
 * **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 06/08/2026
 
 ---
