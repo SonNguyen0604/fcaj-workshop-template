@@ -1,33 +1,32 @@
 ---
 title: "Báo cáo thực tập"
-date: 2026-04-17
+date: 2026-06-22
 weight: 1
 chapter: false
 ---
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Hồ Nguyễn Đăng Khôi
+&emsp; **Họ và tên:** Nguyễn Duy Sơn
 
-&emsp; **Số điện thoại:** 0824869269
+&emsp; **Số điện thoại:** 0928342484
 
-&emsp; **Email:** khoidang753951@gmail.com
+&emsp; **Email:** nguyenduyson3009@gmail.com
 
-&emsp; **Trường:** Đại học Công nghệ TP.HCM
+&emsp; **Trường:** Đại học Sài Gòn (SGU)
 
-&emsp; **Ngành:** Công nghệ thông tin
-
-&emsp; **Lớp:** 22DTHC3
+&emsp; **Chuyên ngành:** Hệ thống thông tin
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
-&emsp; **Vị trí thực tập:** FCJ Cloud Intern
+&emsp; **Vị trí thực tập:** Cloud Operation Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến ngày 10/07/2026
+&emsp; **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 06/08/2026
 
-![Ảnh đại diện của bạn](/images/avatar.jpg)
+### Dự án kỹ thuật (Workshop):
+&emsp; **Đề tài:** Đảm bảo tính sẵn sàng cao (High Availability) trên AWS
 
-
+---
 
 ### Nội dung báo cáo
 
