@@ -1,39 +1,38 @@
 ---
 title: "Internship Report"
-date: 2026-04-17
+date: 2026-06-22
 weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
-
 ### Student Information:
-&emsp; **Full Name:** Ho Nguyen Dang Khoi
+&emsp; **Full Name:** Nguyen Duy Son
 
-&emsp; **Phone Number:** 0824869269 
+&emsp; **Phone Number:** 0928342484
 
-&emsp; **Email:** khoidang753951@gmail.com
+&emsp; **Email:** nguyenduyson3009@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology
+&emsp; **University:** Saigon University (SGU)
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** Information Systems
 
-&emsp; **Class:** 22DTHC3
+&emsp; **Internship Company:** Amazon Web Services Vietnam Company Limited
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Position:** Cloud Operation Intern
 
-&emsp; **Internship Position:** FCJ Cloud Intern
+&emsp; **Duration:** From June 22, 2026 to August 06, 2026
 
-&emsp; **Internship Duration:** From 17/04/2026 to 10/7/2026
+### Technical Project (Workshop):
+&emsp; **Topic:** Ensuring High Availability on AWS
 
-![Your profile picture](/images/avatar.jpg)
+---
 
-### Report Content
+### Report Contents
 
 1.  [Worklog](1-Worklog/)
 2.  [Proposal](2-Proposal/)
-3.  [Translated Blogs](3-BlogsTranslated/)
+3.  [Translated Blog Posts](3-BlogsTranslated/)
 4.  [Events Participated](4-EventParticipated/)
 5.  [Workshop](5-Workshop/)
 6.  [Self-evaluation](6-Self-evaluation/)
