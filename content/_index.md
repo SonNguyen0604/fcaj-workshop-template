@@ -1,40 +1,24 @@
 ---
 title: "Internship Report"
-date: 2026-06-22
-weight: 1
-chapter: false
 ---
 
-# Internship Report
 ### Student Information:
-&emsp; **Full Name:** Nguyen Duy Son
-
-&emsp; **Phone Number:** 0928342484
-
-&emsp; **Email:** nguyenduyson3009@gmail.com
-
-&emsp; **University:** Saigon University (SGU)
-
-&emsp; **Major:** Information Systems
-
-&emsp; **Internship Company:** Amazon Web Services Vietnam Company Limited
-
-&emsp; **Position:** Cloud Operation Intern
-
-&emsp; **Duration:** From June 22, 2026 to August 06, 2026
-
-### Technical Project (Workshop):
-&emsp; **Topic:** Ensuring High Availability on AWS
+* **Full Name:** Nguyen Duy Son
+* **Phone Number:** 0928342484
+* **Email:** nguyenduyson3009@gmail.com
+* **University:** Saigon University (SGU)
+* **Major:** Information Systems
+* **Class:** DCT1223  
+* **Internship Company:** Amazon Web Services Vietnam Company Limited
+* **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+* **Internship Duration:** From June 22, 2026 to August 6, 2026
 
 ---
-
-### Report Contents
-
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [Translated Blog Posts](3-BlogsTranslated/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
-...
+### Report Content
+* [Worklog](1-worklog)
+* [Proposal](2-proposal)
+* [Blogs Posted](3-blogsposted)
+* [Events Participated](4-events-participated)
+* [Workshop](5-workshop)
+* [Self-evaluation](6-self-evaluation)
+* [Sharing and Feedback](7-sharing-and-feedback)
