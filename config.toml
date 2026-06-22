@@ -2,6 +2,7 @@ baseURL = "https://sonnguyen0604.github.io/fcaj-workshop-template/"
 relativeURLs = false
 canonifyURLs = true
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
