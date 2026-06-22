@@ -2,7 +2,6 @@
 title: "Báo cáo thực tập"
 ---
 
-# "Internship Report"
 ### Thông tin sinh viên:
 * **Họ và tên:** Nguyễn Duy Sơn
   
