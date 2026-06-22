@@ -1,46 +1,31 @@
 ---
 title: "Các events đã tham gia"
-date: 2024-01-01
+date: 2026-06-22
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
-> Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc. 
-> 
-> Mỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:
-> * Tên sự kiện
-> * Thời gian tổ chức
-> * Địa điểm (nếu có)
-> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.)
-> * Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện
-> * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
-> * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
-
-
-Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
+Trong quá trình thực tập tại AWS Vietnam, em được trao cơ hội tham gia các sự kiện công nghệ và các giải đấu cộng đồng. Mỗi sự kiện đều là một trải nghiệm thực tế quý giá giúp em củng cố kiến thức chuyên môn, rèn luyện kỹ năng làm việc nhóm dưới áp lực và mở rộng góc nhìn về hệ sinh thái Điện toán đám mây & AI.
 
 ### [Event 1](4.1-Event1/)  
-&emsp;**Tên sự kiện:** FCAJ Community Day - Hành trình đám mây AI đầu tiên cùng AWS  
+&emsp;**Tên sự kiện:** FCAJ Kick-off Tech Trivia & Community Tournament  
 
-&emsp;**Thời gian:** 09:00 - 12:00, Ngày 23 tháng 5 năm 2026  
+&emsp;**Thời gian:** 09:00 - 12:00, Ngày 20 tháng 06 năm 2026  
 
-&emsp;**Địa điểm:** Tầng 26, Tòa nhà tài chính Bitexco, số 2 Hải Triều, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh  
+&emsp;**Địa điểm:** Văn phòng Amazon Web Services Vietnam (Thành phố Hồ Chí Minh) / Trực tuyến  
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự  
+&emsp;**Vai trò trong sự kiện:** Người tham gia thi đấu (Tournament Participant)  
 
-&emsp;**Description:** Sự kiện công nghệ cộng đồng tập trung vào các ứng dụng GenAI, các bước đột phá trong kỹ nghệ LLM (hệ thống Multi-Agent, quản lý ngữ cảnh câu lệnh), tối ưu hóa hạ tầng đám mây (Amazon CloudFront) và quy trình phát triển sản phẩm khả dụng tối thiểu (MVP) thực tế từ các cuộc thi hackathon.
+&emsp;**Description:** Giải đấu trí công nghệ theo thể thức loại trực tiếp (Knockout) giữa 8 đội tuyển nhằm thử thách phản xạ và kiến thức nền tảng về Cloud, các dịch vụ core AWS và Generative AI. Đội của em tham gia trận đấu thứ 2, dù dừng bước sớm nhưng đã ngồi lại quan sát toàn diện cách các đội bạn xử lý các bẫy kỹ thuật cho đến khi loạt trận chung kết kịch tính khép lại.
 
-&emsp;**Outcomes:** Thu nhận được các góc nhìn thực tế về việc xây dựng "Bộ não AI thứ hai" (Second AI Brain) và các đặc vụ AI cấp doanh nghiệp, nắm vững các giải pháp kỹ thuật để kiểm soát tính bất định của LLM, đồng thời học hỏi các mô hình chuẩn nhất để tối ưu chi phí và bảo mật cho điện toán biên (Edge Computing).
+&emsp;**Outcomes:** Nhận diện và rà soát sâu sắc các lỗ hổng kiến thức cốt lõi (VPC, EC2, IAM, tham số LLM) thông qua bộ câu hỏi trắc nghiệm thực tế từ ban cố vấn, đồng thời rút ra bài học đắt giá về việc phân rã vai trò và ra quyết định nhanh trong đội ngũ dưới áp lực thời gian.
 
+### [Event 2](4.2-Event2/)  
+&emsp;**Tên sự kiện:** [Tên sự kiện tiếp theo trong kỳ thực tập]  
 
+&emsp;**Thời gian:** *[Sẽ cập nhật khi tham gia]* &emsp;**Địa điểm:** *[Sẽ cập nhật]* &emsp;**Vai trò trong sự kiện:** Người tham dự  
 
-### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+&emsp;**Description:** *[Sẽ cập nhật nội dung sự kiện thực tế]*
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
-
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
-
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
-
+&emsp;**Outcomes:** *[Sẽ cập nhật những kiến thức và bài học rút ra]*
