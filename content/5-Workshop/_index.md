@@ -1,11 +1,3 @@
-*Nhấn **Commit changes...** để lưu lại file Tiếng Việt.*
-
----
-
-### Bước 3: Cập nhật bản Tiếng Anh (`_index.md`)
-Bây giờ ông mở file tiếng Anh **`_index.md`** ngay trong thư mục đó, chọn biểu tượng cây bút chì (`✏️`) và dán toàn bộ đoạn mã tiếng Anh kỹ thuật chuẩn hóa này vào:
-
-```markdown
 ---
 title: "Building High Availability Systems"
 date: 2026-06-22
@@ -58,6 +50,41 @@ To execute this technical lab successfully, you need:
 #### **Step 3: Containerizing and Deploying the Python Application on EC2**
 * **Details:** Write a Dockerfile to containerize the Python app, build the image, and deploy it onto an EC2 Instance to test connectivity with RDS and S3 resources.
 * **Configuration Snippet:**
-  ```dockerfile
-  # Dockerfile template or application connection strings
-  # [Member 3: Insert the Dockerfile/Python DB connection code block here]
+  * `[Member 3: Insert the Dockerfile/Python DB connection code block here]`
+* **Console Screenshots:**
+  
+  `[Member 3: Insert active container log screenshots here]`
+
+#### **Step 4: Configuring the Application Load Balancer & Auto Scaling Group**
+* **Details:** Provision a Target Group and deploy an Application Load Balancer (ALB) inside the Public Subnets. Set up an Auto Scaling Group (ASG) backed by a Launch Template and dynamic CPU-based Scaling Policies.
+* **Console Screenshots:**
+  
+  `[Member 4: Insert ALB, ASG, and Scaling Policy configuration screenshots here]`
+
+#### **Step 5: Implementing Centralized Observability via Amazon CloudWatch**
+* **Details:** Configure the CloudWatch Logs Agent to gather infrastructure metrics, build a centralized operational dashboard, and provision alerting thresholds.
+* **Console Screenshots:**
+  
+  `[Member 5: Insert CloudWatch Dashboard and Alarm configuration screenshots here]`
+
+---
+
+### 4. System Testing & Failover Validation
+
+Validation procedures to confirm infrastructure resilience under disaster recovery conditions:
+1. **Load Testing:** Simulate extreme traffic spikes to verify that the Auto Scaling Group successfully scales out by provisioning additional computing capacity.
+2. **Disaster Simulation (Failover Test):** Manually terminate all compute nodes (EC2 instances) hosted inside Availability Zone A (AZ-A).
+3. **Expected Outcome:** The Application Load Balancer detects the failure immediately via continuous Health Checks, dynamically drops routing to AZ-A, and seamlessly diverts 100% of user traffic to the standby instances in AZ-B with zero service disruption.
+4. **Validation Artifacts:**
+  
+  `[Member 5: Insert CloudWatch log/metric artifacts proving automated self-healing here]`
+
+---
+
+### 5. Resource Clean-up
+
+Execute resource teardown in the exact sequence specified below to prevent unexpected billing on your AWS account:
+1. Terminate the Auto Scaling Group and delete the Application Load Balancer.
+2. Terminate all operational Amazon EC2 Instances.
+3. Delete the Amazon RDS Database Instance and empty/delete the Amazon S3 Buckets.
+4. Delete the custom Amazon VPC network infrastructure.
