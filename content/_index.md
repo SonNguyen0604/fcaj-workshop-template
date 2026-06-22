@@ -4,13 +4,21 @@ title: "Internship Report"
 
 ### Student Information:
 * **Full Name:** Nguyen Duy Son
+
 * **Phone Number:** 0928342484
+
 * **Email:** nguyenduyson3009@gmail.com
+
 * **University:** Saigon University (SGU)
+
 * **Major:** Information Systems
-* **Class:** DCT1223  
+
+* **Class:** DCT1223
+
 * **Internship Company:** Amazon Web Services Vietnam Company Limited
+
 * **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+
 * **Internship Duration:** From June 22, 2026 to August 6, 2026
 
 ---
