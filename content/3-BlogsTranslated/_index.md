@@ -1,18 +1,41 @@
 ---
-title: "Translated Blogs"
-date: 2026-06-16
+title: "Blog Posts"
+date: 2026-06-22
 weight: 3
 chapter: false
-pre: " <b> 3. </b> "
+pre: " <b> 3.1. </b> "
 ---
 
-This section will list and introduce the blogs you have translated. For example:
+# AWS STUDY GROUP KNOWLEDGE SHARING BLOGS
 
-###  [Blog 1 - From Hourly Caching to Real-Time Pricing: How Samsung Solved Price Synchronization with AWS Lambda Response Streaming](3.1-Blog1/)
-This blog introduces a fascinating case study from the AWS Architecture Blog on how Samsung improved the pricing system on Samsung.com to solve the real-time data synchronization challenge. You will learn about the limitations of the legacy architecture using an hourly Cron Job cache (such as permutation explosion of product variants and up to a 60-minute synchronization lag), why Samsung decided to completely eliminate this intermediate aggregation layer to switch to a Serverless model, and how combining Amazon CloudFront with AWS Lambda Response Streaming helps reduce Time To First Byte (TTFB), ensuring accurate prices directly from the Source of Truth while maintaining performance at a massive scale.
+As required by the First Cloud Journey program, our team conducts research, translates, and publishes 3 in-depth technical articles to the AWS Study Group community to spread core knowledge about High Availability architecture.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+---
 
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+## 📝 BLOG 1: Overview of High Availability Architecture and Multi-AZ Mechanisms on AWS
+
+* **Status:** Scheduled for Week 2 (Targeted at foundational knowledge sharing).
+* **Key Topics:**
+  * Core definitions of High Availability (HA) and Fault Tolerance (FT). Clearly distinguishing the operational differences between these two concepts to eliminate design confusion in production environments.
+  * The critical role of AWS Global Infrastructure: Understanding AWS Regions and AWS Availability Zones (AZs). Why deploying applications across a single AZ introduces dangerous Single Points of Failure (SPOFs).
+  * How the Multi-AZ mechanism operates: Distributing EC2 computing resources independently across data centers with isolated power, networking, and cooling to completely contain physical infrastructure incidents.
+
+---
+
+## 📝 BLOG 2: Optimizing Scalable Infrastructure with Application Load Balancer and Auto Scaling Groups
+
+* **Status:** Scheduled for Week 3 (Focusing on core architectural deployment).
+* **Key Topics:**
+  * Introduction to Application Load Balancers (ALB): How it accepts internet traffic, executes continuous infrastructure Health Checks, and intelligently distributes requests to healthy target instances across multiple AZs.
+  * The capabilities of AWS Auto Scaling Groups (ASG): Configuring dynamic Scaling Policies triggered by real-time metrics such as CPU utilization thresholds or request volume.
+  * End-to-end integration between ALB and ASG: How this synergy enables infrastructure self-healing during compute failures while optimizing cloud costs by automatically terminating underutilized instances during low-traffic hours.
+
+---
+
+## 📝 BLOG 3: Multi-AZ Data Resilience with Amazon RDS and Centralized Monitoring via Amazon CloudWatch
+
+* **Status:** Scheduled for Week 4 (Emphasizing system testing and operational metrics).
+* **Key Topics:**
+  * Durable data architectures with Amazon RDS Multi-AZ deployments: Utilizing synchronous replication to continuously mirror data from the primary database instance to an isolated standby database instance located in a separate AZ.
+  * Understanding Automated Failover processes: When the primary database encounters hardware degradation or an AZ outage, Amazon RDS automatically updates DNS endpoints to switch to the standby instance without breaking the Python application's active state.
+  * Comprehensive observability with Amazon CloudWatch: Building centralized dashboards to track metrics and provisioning CloudWatch Alarms to trigger automated email notifications when system anomalies or failover operations occur.
