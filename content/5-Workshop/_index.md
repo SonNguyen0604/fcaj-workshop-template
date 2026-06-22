@@ -1,27 +1,63 @@
+*Nhấn **Commit changes...** để lưu lại file Tiếng Việt.*
+
 ---
-title: "Workshop"
-date: 2024-01-01
+
+### Bước 3: Cập nhật bản Tiếng Anh (`_index.md`)
+Bây giờ ông mở file tiếng Anh **`_index.md`** ngay trong thư mục đó, chọn biểu tượng cây bút chì (`✏️`) và dán toàn bộ đoạn mã tiếng Anh kỹ thuật chuẩn hóa này vào:
+
+```markdown
+---
+title: "Building High Availability Systems"
+date: 2026-06-22
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-# Secure Hybrid Access to S3 using VPC Endpoints
 
-#### Overview
+# WORKSHOP: ENSURING HIGH AVAILABILITY ON AWS
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+This comprehensive workshop guides you through the process of designing, deploying, and operating a fault-tolerant and auto-scaling infrastructure on AWS for a Python web application.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+---
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+### 1. Overview & Architecture Diagram
 
-#### Content
+The infrastructure is engineered following the AWS Well-Architected Framework (Reliability Pillar) guidelines, ensuring the application remains operational 24/7 even during a total Availability Zone failure.
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+* **Architecture Diagram:**
+  
+  `[Member 2: Insert the system architecture diagram designed via Draw.io/Excalidraw here]`
+
+* **AWS Services Utilized:** Amazon VPC, Application Load Balancer (ALB), Auto Scaling Group (ASG), Amazon EC2, Amazon RDS Multi-AZ, Amazon S3, Amazon CloudWatch.
+
+---
+
+### 2. Prerequisites
+
+To execute this technical lab successfully, you need:
+* An AWS Account provisioned with administrative privileges (IAM AdministratorAccess).
+* AWS CLI and Docker Desktop configured on your local workstation.
+* The source code for the Python demo application.
+
+---
+
+### 3. Step-by-Step Guide
+
+#### **Step 1: Provisioning a Multi-AZ VPC Network Infrastructure**
+* **Details:** Configure an AWS VPC spanning two isolated Availability Zones (AZ-A and AZ-B). Each AZ is divided into a Public Subnet (routed to the Internet Gateway) and a Private Subnet.
+* **Console Screenshots:**
+  
+  `[Member 2: Insert VPC, Subnets, and Route Tables console screenshots here]`
+
+#### **Step 2: Deploying a Multi-AZ Amazon RDS Database Engine**
+* **Details:** Launch an Amazon RDS Database Instance within the Private Subnet Subnet Group, enabling Multi-AZ deployment for real-time synchronous standby replication.
+* **Console Screenshots:**
+  
+  `[Member 2: Insert RDS Multi-AZ operational status screenshots here]`
+
+#### **Step 3: Containerizing and Deploying the Python Application on EC2**
+* **Details:** Write a Dockerfile to containerize the Python app, build the image, and deploy it onto an EC2 Instance to test connectivity with RDS and S3 resources.
+* **Configuration Snippet:**
+  ```dockerfile
+  # Dockerfile template or application connection strings
+  # [Member 3: Insert the Dockerfile/Python DB connection code block here]
