@@ -1,141 +1,101 @@
 ---
-title: "Week 1 Worklog"
-date: 2026-04-20
+title: "Worklog Week 1"
+date: 2026-06-22
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
+
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services
+* Connect with team members, form a 5-member group, and establish a communication/work policy for a 5-week sprint.
+* Research the fundamentals of High Availability (HA) architecture on AWS and set up the bilingual reporting website infrastructure.
 
-### Tasks to be carried out this week:
+### Tasks deployed this week:
 <table>
   <thead>
     <tr>
       <th>Day</th>
-      <th>Task</th>
+      <th>Tasks</th>
       <th>Start Date</th>
-      <th>Completion Date</th>
-      <th>Reference Material</th>
+      <th>End Date</th>
+      <th>Resource / Documentation</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>2</td>
+      <td>Mon</td>
       <td>
         <ul>
-          <li>Get acquainted with FCJ members</li>
-          <li>Read and take note of internship unit rules and regulations</li>
-          <li>Create an AWS Free Tier account</li>
-          <li>Set up MFA for your account</li>
+          <li>Attended the orientation and kick-off session for the Cloud Journey internship program at AWS Vietnam.</li>
+          <li>Connected with team members and agreed to select Topic 2: Ensuring High Availability on AWS.</li>
         </ul>
       </td>
-      <td>20/04/2026</td>
-      <td>20/04/2026</td>
-      <td></td>
+      <td>22/06/2026</td>
+      <td>22/06/2026</td>
+      <td>FCAJ Program Materials</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>Tue</td>
       <td>
         <ul>
-          <li>Get full $200 Credit</li>
-          <li>
-            Learn about AWS services to earn $100
-            <ul>
-              <li>EC2</li>
-              <li>Amazon Bedrock</li>
-              <li>Aurora &amp; RDS</li>
-              <li>AWS Budgets</li>
-              <li>AWS Lambda</li>
-            </ul>
-          </li>
+          <li>Officially assigned team roles: Personally took on the role of Technical Writer and Progress Coordinator.</li>
+          <li>Researched foundational theories of High Availability, Fault Tolerance, and core components (Multi-AZ VPC, ALB, ASG, Multi-AZ RDS).</li>
         </ul>
       </td>
-      <td>21/04/2026</td>
-      <td>21/04/2026</td>
-      <td><a href="https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/">https://000001.awsstudygroup.com/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/</a></td>
+      <td>23/06/2026</td>
+      <td>23/06/2026</td>
+      <td><a href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected Framework (Reliability Pillar)</a></td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>Wed</td>
       <td>
         <ul>
-          <li>
-            Learn about Cost Management with AWS Budget
-            <ul>
-              <li>Create Budget</li>
-              <li>Create Cost Budget</li>
-              <li>Create Usage Budget</li>
-              <li>Create RI Budget</li>
-              <li>Create Savings Plans Budget</li>
-            </ul>
-          </li>
+          <li>Forked the original <code>fcaj-workshop-template</code> repository to my personal GitHub account.</li>
+          <li>Inspected the content directory structure (Folders 1 to 7) to prepare for data customization.</li>
         </ul>
       </td>
-      <td>22/04/2026</td>
-      <td>22/04/2026</td>
-      <td><a href="https://000007.awsstudygroup.com/">https://000007.awsstudygroup.com/</a></td>
+      <td>24/06/2026</td>
+      <td>24/06/2026</td>
+      <td><a href="https://github.com/hdnkhoi-dev/fcaj-workshop-template">FCAJ Workshop Template</a></td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>Thu</td>
       <td>
         <ul>
-          <li>
-            Learn about AWS Support Plans
-            <ul>
-              <li>Access AWS Suppport</li>
-              <li>Managing Support Requests</li>
-            </ul>
-          </li>
+          <li>Edited and updated personal identification information for Nguyen Duy Son (SGU - Information Systems) on the Portfolio homepage.</li>
+          <li>Configured and synchronized the homepage in both English and Vietnamese to fulfill project requirements.</li>
         </ul>
       </td>
-      <td>23/04/2026</td>
-      <td>23/04/2026</td>
-      <td><a href="https://000009.awsstudygroup.com/">https://000009.awsstudygroup.com/</a></td>
+      <td>25/06/2026</td>
+      <td>25/06/2026</td>
+      <td>Hugo Framework Documentation</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>Fri</td>
       <td>
         <ul>
-          <li>
-            Learn about basic IAM
-            <ul>
-              <li>Create IAM Group and Users (Admin Group, Admin User, Login Admin User)</li>
-              <li>Create IAM Role (Admin Role, OperatorUser)</li>
-              <li>Switch Role</li>
-            </ul>
-          </li>
+          <li>Conducted an online team meeting to finalize the proposed HA system architecture diagram (Multi-AZ, Load Balancer, EC2, RDS, S3).</li>
+          <li>Consolidated Week 1 progress data from all members, finalized the Week 1 Worklog file, and prepared the draft skeleton for 2-Proposal.</li>
         </ul>
       </td>
-      <td>24/04/2026</td>
-      <td>24/04/2026</td>
-      <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
+      <td>26/06/2026</td>
+      <td>26/06/2026</td>
+      <td>AWS Study Group Documents</td>
     </tr>
   </tbody>
 </table>
 
+### WEEK 1 OUTCOMES: TEAM INITIALIZATION & REPORTING INFRASTRUCTURE
 
-### WEEK 1 ACHIEVEMENTS: AWS FOUNDATION & COST MANAGEMENT
+1. **Team Alignment & Role Assignment**
+   - Successfully formed a cohesive 5-member team with a high collaborative spirit.
+   - Defined clear individual responsibilities: Personally managing the documentation, website portfolio, and bilingual translation, which unburdens technical members from reporting tasks.
 
-1. **Cloud Fundamentals & Initial Setup**
-   - **Account & Security:** Successfully initialized an AWS Free Tier account and implemented Multi-Factor Authentication (MFA) to ensure root account security.
-   - **Service Orientation:** Acquired foundational knowledge of core AWS services, including EC2, Amazon Bedrock, Aurora & RDS, and AWS Lambda.
+2. **Documentation Foundation (GitHub Portfolio)**
+   - Mastered basic Git/GitHub operations through repository forking and Markdown file configuration.
+   - Successfully personalized the bilingual internship report homepage while maintaining the integrity of the original template's navigation structure.
 
-2. **AWS Cost Management & Budgeting**
-   - Mastered tools and strategies to monitor and control cloud expenditures using AWS Budgets:
-     - **Budget Creation & Alerts:** Proficient in setting up customized budgets and configuring automated email notifications when spending exceeds defined thresholds.
-     - **Cost & Usage Tracking:** Established Cost Budgets to monitor actual spend and Usage Budgets to track the consumption of specific service resources.
-     - **Optimization Planning:** Gained expertise in creating RI (Reserved Instance) Budgets and Savings Plans Budgets to track utilization and maximize cost efficiency.
-
-3. **AWS Support & Case Management**
-   - Developed a comprehensive understanding of the AWS Support ecosystem to resolve technical and billing inquiries:
-     - **Support Plans:** Evaluated different support tiers (Basic, Developer, Business, and Enterprise) and learned how to switch packages based on organizational needs.
-     - **Request Management:** Mastered the process of opening support cases, including selecting the appropriate Severity level and communicating effectively with AWS support engineers.
-
-4. **Identity and Access Management (IAM) Basics**
-   - **Identity Governance:** Configured basic access structures by creating IAM Groups and Admin Users for administrative control.
-   - **Role-Based Access Control (RBAC):** Implemented IAM Roles (Admin and Operator) and utilized the Switch Role feature to manage resources securely without using the root account.
-
-
-  
+3. **Architecture & Action Plan Alignment**
+   - Reached a technical consensus among all team members regarding the high-level High Availability architecture diagram.
+   - Established a compressed 5-week project timeline (ending by late July) to match the final evaluation deadline.
