@@ -42,4 +42,5 @@ Giải đấu diễn ra kịch tính đến tận những giây cuối cùng khi
 
 ### 6. Minh chứng hình ảnh (Evidence)
 <img width="6960" height="4640" alt="6C7A6843" src="https://github.com/user-attachments/assets/8b6a4818-4c13-48e1-9023-279ca075874d" />
+<img src="../../images/aws-budget-setup.png" alt="AWS Budget Configuration" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
