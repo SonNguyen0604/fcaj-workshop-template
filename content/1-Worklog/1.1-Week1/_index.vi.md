@@ -100,7 +100,7 @@ pre: " <b> 1.1. </b> "
 
 3. **Thống nhất kiến trúc & Kế hoạch hành động**
    - Toàn đội đạt được sự đồng thuận về mặt kỹ thuật đối với sơ đồ kiến trúc High Availability tổng quan.
-   - Thiết lập thành công timeline rút gọn 5 tuần (kết thúc vào cuối tháng 7) để kịp tiến độ nghiệm thu dự án.
+   - Thiết lập thành công timeline chi tiết 8 tuần (kết thúc vào ngày 15/08/2026) theo đúng lịch trình của nhà trường để kịp tiến độ nghiệm thu dự án.
 
 ### MINH CHỨNG THỰC HIỆN (EVIDENCE)
 
