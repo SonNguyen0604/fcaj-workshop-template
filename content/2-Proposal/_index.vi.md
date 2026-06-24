@@ -1,12 +1,10 @@
 ---
-title: "Đề xuất Dự án"
+title: "2. Đề xuất Dự án (Proposal)"
 date: 2026-06-22
 weight: 2
 chapter: false
-pre: " <b> 2.1. </b> "
+pre: " <b> 2. </b> "
 ---
-
-# ĐỀ XUẤT DỰ ÁN (PROJECT PROPOSAL)
 
 ### 1. Tổng quan dự án (Project Overview)
 Dự án tập trung vào nghiên cứu và thực nghiệm triển khai một hệ thống hạ tầng có khả năng chống chịu lỗi và đảm bảo tính sẵn sàng cao (High Availability) cho ứng dụng trên nền tảng điện toán đám mây AWS. Hệ thống này mô phỏng một môi trường production thực tế, nơi ứng dụng phải hoạt động liên tục 24/7 ngay cả khi một trung tâm dữ liệu (Availability Zone) gặp sự cố hoàn toàn.
