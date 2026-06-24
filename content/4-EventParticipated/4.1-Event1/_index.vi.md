@@ -41,6 +41,5 @@ Giải đấu diễn ra kịch tính đến tận những giây cuối cùng khi
 * **Ứng dụng vào dự án thực tế:** Thất bại trong phòng thi đấu giúp tôi nhận ra các lỗ hổng kiến thức hạ tầng cốt lõi. Tôi sẽ lập tức rà soát lại lý thuyết mạng VPC và cơ chế High Availability để phục vụ trực tiếp cho giai đoạn thiết kế Đề xuất dự án (Proposal) của nhóm mình.
 
 ### 6. Minh chứng hình ảnh (Evidence)
-<img width="6960" height="4640" alt="6C7A6843" src="https://github.com/user-attachments/assets/8b6a4818-4c13-48e1-9023-279ca075874d" />
-<img src="../../images/aws-budget-setup.png" alt="AWS Budget Configuration" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<img src="https://github.com/user-attachments/assets/8b6a4818-4c13-48e1-9023-279ca075874d" alt="Thi đấu Cloud Architect" style="width: 100% !important; max-width: 100% !important; height: auto !important; display: block; margin: 20px auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
