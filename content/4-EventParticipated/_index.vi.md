@@ -13,7 +13,7 @@ Trong suốt thời gian thực tập tại AWS Vietnam, tôi đã có cơ hội
 
 &emsp;**Thời gian:** 09:00 - 12:00, Ngày 20/06/2026  
 
-&emsp;**Địa điểm:** Văn phòng Amazon Web Services Vietnam (TP. Hồ Chí Minh) / Trực tuyến  
+&emsp;**Địa điểm:** Trực tiếp tại Văn phòng Amazon Web Services Vietnam (TP. Hồ Chí Minh)  
 
 &emsp;**Vai trò tham gia:** Thành viên đội thi đấu  
 
