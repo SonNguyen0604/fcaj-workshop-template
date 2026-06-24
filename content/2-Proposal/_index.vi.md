@@ -1,5 +1,5 @@
 ---
-title: "2. Đề xuất Dự án (Proposal)"
+title: "Đề xuất Dự án (Proposal)"
 date: 2026-06-22
 weight: 2
 chapter: false
