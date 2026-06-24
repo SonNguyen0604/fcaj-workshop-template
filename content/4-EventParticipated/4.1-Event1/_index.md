@@ -42,3 +42,4 @@ The tournament escalated in tension until only the final two elite teams remaine
 
 ### 6. Evidence
 <img width="6960" height="4640" alt="6C7A6843" src="https://github.com/user-attachments/assets/8b0f92a9-2658-4da6-a57c-d37a52798d73" />
+<img src="../../images/aws-budget-setup.png" alt="AWS Budget Configuration" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
