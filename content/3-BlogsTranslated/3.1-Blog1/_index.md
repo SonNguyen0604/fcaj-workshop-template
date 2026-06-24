@@ -5,120 +5,100 @@ weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-# From Hourly Caching to Real-Time Pricing: How Samsung Solved Price Synchronization with AWS Lambda Response Streaming
 
-In e-commerce, product pricing is one of the most critical pieces of data. If the price displayed on the product page differs from the price at checkout, the customer experience can be severely impacted.
+# From "Bill Shock" Anxiety to Cloud Safety Sandbox: Proactive Cost Management with AWS Budgets
 
-Recently, I read a very interesting post from the AWS Architecture Blog about how Samsung improved the pricing system on Samsung.com using AWS Lambda Response Streaming and Amazon CloudFront.
+In cloud computing, operational cost is one of the most critical metrics. Leaving a single resource running after a lab session can result in a month-end invoice that severely impacts a student's learning experience.
 
-This is an excellent case study on choosing the right architecture instead of just focusing on optimizing performance.
+Recently, as I kicked off my Cloud Journey internship at AWS, I researched and configured a automated budget tracking system using AWS Budgets instead of constantly worrying about unexpected charges.
+
+This is an excellent case study on adopting a solid financial management (FinOps) mindset right from the start of the cloud journey.
 
 ---
 
 ## The Problem
 
-Samsung.com is Samsung's direct sales channel, offering a wide range of product lines such as phones, TVs, home appliances, and accessories.
+AWS provides hundreds of powerful services ranging from EC2 instances and RDS databases to advanced networking topologies.
 
-During major events like Black Friday, a product listing page may need to display the prices of more than 30 different SKUs at the same time.
+During hands-on labs or deploying team projects like High Availability architectures, a student account may need to spin up multiple distinct resources simultaneously.
 
-Each product has multiple variants:
-- Color
-- Memory version
-- Promotional programs
-- Region-specific offers
+Each service comes with its own billing metrics:
+- Hourly compute runtimes (On-Demand)
+- Storage capacity consumption (GB/Month)
+- Data transfer processing through NAT Gateways
+- Idle unassociated Elastic IP fees
 
-This makes querying prices in real-time a major challenge.
-
----
-
-## Legacy Architecture and Issues Arising
-
-In the legacy architecture, Samsung used a Data Aggregation layer between the Pricing Engine and CloudFront.
-
-A Cron Job would run every hour to:
-1. Fetch all product data from the Pricing Engine.
-2. Pre-calculate all possible price combinations.
-3. Save the results into the cache to serve users.
-
-This model helped speed up data read times but created two major problems.
-
-### 1. Permutation Explosion
-As the number of products and variants increased, the number of price combinations grew exponentially.
-
-For example: 30 products × multiple versions × multiple promotional programs could generate thousands or tens of thousands of records that needed to be pre-calculated.
-
-As a result, the system consumed a lot of storage and processing resources for data that might never be accessed by users.
-
-### 2. Synchronization Lag
-This is the more serious issue.
-
-Because the Cron Job only ran once an hour, the data in the cache could lag behind real-world data by up to 60 minutes.
-
-If a Flash Sale program started at 10:05, customers could still see the old price until the next Cron Job ran at 11:00.
-
-Consequences:
-- Inaccurate price display
-- Customers surprised at checkout
-- Loss of trust in the system
-- Impact on revenue
+This multi-layered pricing structure makes real-time cost control a major visibility challenge for beginners.
 
 ---
 
-## New Solution with AWS Lambda Response Streaming
+## Legacy Habits and Emerging Risks
 
-Instead of continuing to optimize the cache, Samsung decided to completely eliminate the Data Aggregation layer.
+In the traditional habit of most cloud learners, cost tracking is handled "reactively"—either by waiting for the end-of-month invoice or occasionally checking the Billing console manually.
 
-The new architecture is built on the principle: **Always fetch data from the primary source (Source of Truth) at the time the user makes the request.**
+This manual checkpoint approach introduces two severe vulnerabilities:
 
-Operational workflow:
-1. The user sends a request to get the product price.
-2. Amazon CloudFront checks the cache at the Edge Location.
-3. If a cache miss occurs, the request is forwarded to AWS Lambda.
-4. Lambda performs a fan-out and sends multiple requests in parallel to the Pricing Engine.
-5. The results are streamed back to the user as soon as the data is returned.
-6. CloudFront continues to cache the results for a short period to optimize performance.
+### 1. Resource Leaks
+As the number of practical labs grows, destroying idle assets becomes easy to overlook. An EC2 server or a NAT Gateway running silently 24/7 without active traffic will continuously drain the account balance.
+
+### 2. Notification Synchronization Lag
+This is the more critical issue. Without automated threshold alarms, users remain completely blind to accumulating charges until actual credit card deductions occur or the account gets suspended due to overdue balances. This leads to budget shocks, anxiety, and a loss of confidence to continue cloud experimentation.
 
 ---
 
-## Why AWS Lambda Response Streaming fits?
+## The New Solution with AWS Budgets
 
-Normally, Lambda will wait to finish processing all data before returning a response. This increases the wait time when aggregating data from multiple different sources.
+Instead of relying on luck with manual checks, I decided to establish a "proactive defense ring" for my account right during Week 1.
 
-With Lambda Response Streaming:
-- Data is sent back as soon as there are results
-- Reduces Time To First Byte (TTFB)
-- Users receive responses sooner
-- No need to build a complex intermediate cache layer
+The new monitoring workflow operates on a core pillar: **Continuous expenditure tracking with automated alarm dispatches the moment a safety boundary is breached.**
 
-This is the key differentiator that helped Samsung ensure both performance and the accuracy of pricing data.
-
----
-
-## AWS Services Featured in the Architecture
-
-- Amazon CloudFront
-- AWS Lambda
-- Lambda Response Streaming
-- Lambda Function URL
-- Provisioned Concurrency
-
-Although the number of services is not large, the way these services are combined helped solve a real-world problem at a massive scale.
+Operational Workflow:
+1. Provision a custom Fixed Cost Budget directly inside the AWS Management Console.
+2. Define a minimal, safe spending cap tailored for learning boundaries (e.g., $5.00/month).
+3. Configure intelligent Alert Thresholds triggered at 80% of the budgeted value.
+4. The AWS Budgets engine continuously evaluates real-time accrued infrastructure spend.
+5. The moment actual costs hit the $4.00 mark, an urgent Email notification is auto-dispatched to the user's phone.
+6. Armed with early warning telemetry, the user immediately logs in to locate and terminate the orphaned resources.
 
 ---
 
-## Lessons I Learned from This Case Study
+## Why AWS Budgets Fits Perfectly?
 
-The most interesting thing does not lie in Lambda Response Streaming itself, but in the architectural mindset.
+Typically, people assume cloud engineering only encompasses writing code and spinning up servers. However, cloud financial governance (FinOps) is the missing link that ensures sustainable system operations.
 
-Caching is often seen as the solution to performance problems. However, in problems where data accuracy is more important than retrieval speed, caching can sometimes become the root cause of business logic errors.
+With AWS Budgets:
+- High-fidelity cost alerts are dispatched instantly upon threshold breaches.
+- Financial risks and billing accidents for students are minimized.
+- Engineers gain peace of mind, enabling confident deployments of complex architectures.
+- Eliminates the need to build and maintain complex custom cost-scraping scripts.
 
-Samsung's case study shows that:
-- Adding a cache is not always the right direction.
-- The Source of Truth needs to be prioritized in systems related to selling prices.
-- Serverless can effectively solve real-time data aggregation problems.
-- A simpler architecture can sometimes bring better results than a system with multiple intermediate layers.
+This vital operational differentiator allowed me to protect my wallet while maintaining smooth, worry-free progress on our team project deliverables.
 
-Original post: https://aws.amazon.com/vi/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/
+---
 
-![Kiến trúc cũ của Samsung gây ra vấn đề trễ đồng bộ](../../../static/images/3-Blog/1.jpg)
-![Kiến trúc mới sử dụng AWS Lambda Response Streaming của Samsung](../../../static/images/3-Blog/2.jpg)
+## AWS Features Utilized in the Configuration
+
+- AWS Budgets Dashboard
+- Monthly Cost Budget
+- Actual Alert Thresholds
+- Amazon SNS / Email Notifications
+
+While the deployment steps are highly streamlined, implementing this simple configuration comprehensively solves account safety and psychological blocks.
+
+---
+
+## My Key Takeaways from this Experience
+
+The most compelling takeaway doesn't lie within hyper-complex services, but within the governance mindset itself.
+
+Building cloud labs isn't just about making a server run. In production environments, budget management is just as critical as system access speed and performance metrics.
+
+Personally setting up AWS Budgets demonstrates that:
+- Cloud learning doesn't start with raw coding; securing the sandbox infrastructure must step forward first.
+- Proactive cost control should be prioritized as a mandatory baseline on all root accounts.
+- Leveraging native AWS tools to enforce financial boundaries is a core required skill for any future Cloud Architect.
+
+Original Content: Self-compiled based on practical hands-on configuration experiences at the FCAJ Bootcamp.
+
+![AWS Budgets management dashboard configured with a minimal safety threshold](../../../static/images/3-Blog/1.jpg)
+![Budget alerts marked as Healthy and ready to safeguard the account](../../../static/images/3-Blog/2.jpg)
