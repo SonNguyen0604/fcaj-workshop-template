@@ -41,5 +41,4 @@ The tournament escalated in tension until only the final two elite teams remaine
 * **Project Application:** The elimination highlighted core infrastructure knowledge gaps. I will immediately review VPC topology and High Availability mechanisms to directly support our team's upcoming Project Proposal phase.
 
 ### 6. Evidence
-<img width="6960" height="4640" alt="6C7A6843" src="https://github.com/user-attachments/assets/8b0f92a9-2658-4da6-a57c-d37a52798d73" />
-<img src="../../images/aws-budget-setup.png" alt="AWS Budget Configuration" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<img src="https://github.com/user-attachments/assets/8b6a4818-4c13-48e1-9023-279ca075874d" alt="Thi đấu Cloud Architect" style="width: 100% !important; max-width: 100% !important; height: auto !important; display: block; margin: 20px auto; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
