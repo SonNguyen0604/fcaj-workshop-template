@@ -41,4 +41,5 @@ Giải đấu diễn ra kịch tính đến tận những giây cuối cùng khi
 * **Ứng dụng vào dự án thực tế:** Thất bại trong phòng thi đấu giúp tôi nhận ra các lỗ hổng kiến thức hạ tầng cốt lõi. Tôi sẽ lập tức rà soát lại lý thuyết mạng VPC và cơ chế High Availability để phục vụ trực tiếp cho giai đoạn thiết kế Đề xuất dự án (Proposal) của nhóm mình.
 
 ### 6. Minh chứng hình ảnh (Evidence)
-*(Ông xem hướng dẫn thêm hình ảnh ở cuối câu trả lời của tôi để chèn ảnh thật vào đây nhé)*
+<img width="6960" height="4640" alt="6C7A6843" src="https://github.com/user-attachments/assets/8b6a4818-4c13-48e1-9023-279ca075874d" />
+
