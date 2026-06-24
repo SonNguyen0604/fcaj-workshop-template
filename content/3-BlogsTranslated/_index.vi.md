@@ -10,7 +10,7 @@ Trong suốt quá trình thực tập và triển khai dự án hạ tầng High
 
 ---
 
-## BÀI BLOG 1: Từ Nỗi Sợ "Hóa Đơn Khủng" Đến Vùng An Toàn Cloud: Quản Lý Chi Phí Chủ Động Với AWS Budgets
+## [BÀI BLOG 1: Từ Nỗi Sợ "Hóa Đơn Khủng" Đến Vùng An Toàn Cloud: Quản Lý Chi Phí Chủ Động Với AWS Budgets](3.1-Blog1/)
 
 * **Trạng thái:** Đã đăng vào Tuần 1 (Ngày 24/06/2026).
 * **Nội dung chính:**
