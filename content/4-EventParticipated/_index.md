@@ -13,7 +13,7 @@ During my internship at AWS Vietnam, I have had the privilege to participate in 
 
 &emsp;**Time:** 09:00 - 12:00, June 20, 2026  
 
-&emsp;**Location:** Amazon Web Services Vietnam Office (Ho Chi Minh City) / Online  
+&emsp;**Location:** In-person at Amazon Web Services Vietnam Office (Ho Chi Minh City)  
 
 &emsp;**Role in Event:** Tournament Participant  
 
