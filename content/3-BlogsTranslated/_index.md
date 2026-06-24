@@ -10,7 +10,7 @@ Throughout my internship and deployment of the High Availability infrastructure 
 
 ---
 
-## BLOG 1: From "Bill Shock" Anxiety to Cloud Safety Sandbox: Proactive Cost Management with AWS Budgets
+## [BLOG 1: From "Bill Shock" Anxiety to Cloud Safety Sandbox: Proactive Cost Management with AWS Budgets](3.1-Blog1/)
 
 * **Status:** Published in Week 1 (June 24, 2026).
 * **Key Topics:**
