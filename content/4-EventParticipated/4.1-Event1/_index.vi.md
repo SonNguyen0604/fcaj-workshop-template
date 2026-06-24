@@ -1,65 +1,44 @@
 ---
-title: "Event 1"
+title: "Event 1: Đấu trường kiến trúc Cloud Architect"
 date: 2026-06-20
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “FCAJ Kick-off Tech Trivia & Community Tournament”
+# BÁO CÁO TỔNG KẾT: ĐẤU TRƯỜNG KIẾN TRÚC "CLOUD ARCHITECT"
 
-### Event Objectives
+### 1. Mục tiêu sự kiện (Event Objectives)
+* Kiểm tra và củng cố tư duy thiết kế kiến trúc đám mây, các dịch vụ cốt lõi của AWS và kiến thức nền tảng về Cloud thông qua mô hình trò chơi hóa (Gamification) đối kháng trực tiếp.
+* Thúc đẩy khả năng làm việc nhóm, phân chia vai trò và ra quyết định chiến thuật nhanh chóng dưới áp lực thời gian giới hạn.
+* Tạo không gian giao lưu công nghệ, gắn kết tinh thần học hỏi giữa toàn thể học viên trong chương trình First Cloud AI Journey (FCAJ).
 
-- Kiểm tra và củng cố kiến thức nền tảng về Cloud, AWS Services và Generative AI thông qua hình thức thi đấu gamification kịch tính.
-- Tạo không gian giao lưu, gắn kết tinh thần đồng đội và nâng cao khả năng phản xạ, làm việc nhóm dưới áp lực thời gian.
-- Chia sẻ lộ trình học tập, rà soát lỗ hổng kiến thức chuẩn bị cho các dự án kỹ thuật (Workshop) chạy nước rút sắp tới.
+### 2. Ban tổ chức & Thành phần tham gia (Speakers & Organizers)
+* **Ban tổ chức:** Các Mentors và Đội ngũ Vận hành cốt lõi của chương trình AWS FCAJ.
+* **Thành phần tham gia:** Gồm 8 đội tuyển xuất sắc được ban tổ chức duyệt ngẫu nhiên (Random) và công bố kết quả vào ngày 19/06/2026. Mỗi đội tuyển bắt buộc phải có đủ 5 thành viên để tham gia tranh tài.
 
-### Speakers / Organizers
+### 3. Thể thức và Quy chế thi đấu độc đáo (Tournament Format & Rules)
+Giải đấu áp dụng thể thức loại trực tiếp (Knockout) với những quy định chuyên nghiệp:
+* **Cơ chế tính điểm:** Hai đội đối đầu trực tiếp, lần lượt trả lời bộ câu hỏi phân cấp từ Dễ đến Khó liên quan đến Cloud và kiến trúc hệ thống. Đội có tổng điểm cao hơn sau các lượt đấu sẽ giành quyền đi tiếp.
+* **Cú hích câu hỏi 11 (Tie-breaker):** Trường hợp hai đội hòa điểm sau các câu hỏi chính thức, câu hỏi số 11 sẽ được kích hoạt để phân định thắng thua dựa trên tốc độ phản xạ của đội bấm chuông nhanh và chính xác nhất.
+* **Hệ thống Kỹ năng Chiến thuật đặc biệt (1 lượt sử dụng):**
+  * **Rủi ro tối thiểu:** Sử dụng khi đội không chắc chắn về đáp án. Nếu trả lời sai sẽ không bị trừ điểm, nếu đúng chỉ được nhận 1/2 số điểm của câu hỏi đó.
+  * **Ngôi sao hy vọng:** Sử dụng cho câu hỏi tự tin nhất. Nếu trả lời đúng sẽ được nhân đôi số điểm (x2), ngược lại nếu sai sẽ bị trừ gấp đôi số điểm (x2).
 
-- **Ban tổ chức chương trình:** Các Mentors và Organizers cốt lõi của AWS First Cloud AI Journey (FCAJ).
-- **Thành phần tham gia:** Toàn thể học viên thực tập sinh được chia quy mô thành 8 đội tuyển thi đấu đối kháng trực tiếp.
+### 4. Diễn biến giải đấu và Trải nghiệm cá nhân (Key Highlights)
 
-### Key Highlights
+#### Trận đấu vòng loại thứ 2 và Bài học từ thực tế
+Đội tuyển của tôi tham gia thi đấu ngay ở trận đấu thứ 2 của vòng loại. Dù cả 5 thành viên đã nỗ lực phối hợp, phân chia người đọc đề và chốt đáp án, nhưng trước áp lực thời gian và yêu cầu phản xạ quá nhanh về các thông số hạ tầng Cloud, đội chúng tôi đã không thể giành lợi thế điểm số trước đội bạn và phải dừng bước sớm. 
 
-#### Hình thức thi đấu đối kháng trực tiếp (Knockout Tournament)
-- Toàn bộ chương trình được khuấy động bằng giải đấu Tech Trivia gồm 8 đội tuyển tham gia trả lời các câu hỏi hóc búa từ Ban tổ chức. 
-- Cơ chế thi đấu: Áp dụng thể thức loại trực tiếp (Knockout), cứ 2 đội sẽ đối đầu trực tiếp với nhau trong một lượt trận, đội nào giành được nhiều điểm hơn sẽ lập tức bước tiếp vào vòng trong.
+#### Quan sát chuyên sâu và Đúc kết bẫy kiến thức
+Sau khi dừng bước, tôi chọn ở lại vị trí quan sát viên để theo dõi toàn diện các trận đấu tiếp theo. Việc này vô cùng có ích khi giúp tôi ghi chép lại được hàng loạt câu hỏi kiến trúc hay, nhận diện được các bẫy kiến thức kinh điển về cấu hình mạng VPC, phân quyền bảo mật IAM và các tham số vận hành mà các đội khác thường xuyên mắc lỗi dưới áp lực tâm lý.
 
-#### Trận đấu thứ 2 và Bài học từ thất bại
-- Đội của tôi tham gia thi đấu ngay ở trận đấu thứ 2 của vòng loại. Dù toàn đội đã rất nỗ lực phối hợp nhưng trước những câu hỏi đòi hỏi tốc độ phản xạ và độ chính xác cao về hạ tầng Cloud, đội chúng tôi đã không giành được lợi thế về điểm số và phải dừng bước sớm.
+#### Trận chung kết nghẹt thở và Cái kết mở
+Giải đấu diễn ra kịch tính đến tận những giây cuối cùng khi chỉ còn lại hai đội tuyển xuất sắc nhất. Do sự giằng co điểm số nghẹt thở bằng các chiến thuật sử dụng "Ngôi sao hy vọng" và thời lượng chương trình có hạn, hai đội đã quyết định dời trận chiến phân định ngôi vương tối cao sang buổi Event tiếp theo, tạo nên một kịch bản vô cùng hấp dẫn.
 
-#### Quan sát chuyên sâu và Đúc kết kiến thức
-- Sau khi dừng bước, tôi đã ngồi lại để tập trung quan sát toàn bộ các trận đấu tiếp theo của các đội bạn. Việc này giúp tôi ghi chép lại được rất nhiều câu hỏi kỹ thuật hay, nhận diện được những bẫy kiến thức kinh điển về cấu hình mạng, bảo mật và cơ chế LLMs mà các đội khác thường mắc phải.
+### 5. Bài học rút ra & Khả năng ứng dụng (Key Takeaways & Action Plan)
+* **Tư duy phối hợp nhóm dưới áp lực:** Khi làm việc nhóm trong môi trường thời gian thực, việc phân định rõ ai là người bấm chuông, ai phân tích đề và ai đưa ra quyết định cuối cùng là yếu tố sống còn để tối ưu hóa điểm số.
+* **Ứng dụng vào dự án thực tế:** Thất bại trong phòng thi đấu giúp tôi nhận ra các lỗ hổng kiến thức hạ tầng cốt lõi. Tôi sẽ lập tức rà soát lại lý thuyết mạng VPC và cơ chế High Availability để phục vụ trực tiếp cho giai đoạn thiết kế Đề xuất dự án (Proposal) của nhóm mình.
 
-#### Kết quả kịch tính và Trận chung kết mở
-- Giải đấu diễn ra vô cùng cân tài cân sức cho đến khi chỉ còn lại 2 đội xuất sắc nhất ở loạt trận cuối cùng. Do sự giằng co nghẹt thở và thời lượng chương trình có hạn, hai đội cuối cùng đã quyết định dời trận chiến phân định vương ngôi tối cao sang buổi Event tiếp theo, để lại một cái kết mở vô cùng kịch tính.
-
-### Key Takeaways
-
-#### Design & Teamwork Mindset
-- **Phản xạ dưới áp lực:** Khi làm việc nhóm trong môi trường áp lực thời gian cao, việc phân chia người đọc câu hỏi, người chốt đáp án và người bấm chuông là cực kỳ quan trọng.
-- **Tư duy học từ thất bại:** Thua cuộc ở một trận đấu không phải là kết thúc, mà là cơ hội tuyệt vời để chuyển sang vị trí quan sát viên, nhìn nhận bài toán một cách khách quan hơn.
-
-#### Technical Architecture Insights
-- Nhận diện rõ các lỗ hổng kiến thức cốt lõi thông qua bộ câu hỏi trắc nghiệm liên quan đến VPC, EC2, IAM và các tham số vận hành của mô hình ngôn ngữ lớn (LLM).
-
-### Applying to Work
-
-- **Rà soát kiến thức hạ tầng:** Lập tức rà soát lại toàn bộ các khái niệm mạng và tính sẵn sàng cao (High Availability) để phục vụ trực tiếp cho Đề tài 2 của nhóm, không để bị hổng kiến thức nền tảng.
-- **Cải thiện giao tiếp nhóm:** Tối ưu hóa lại cách giao tiếp và ra quyết định nhanh với 4 thành viên còn lại trong nhóm dự án để chuẩn bị cho giai đoạn triển khai kỹ thuật sắp tới.
-
-### Event Experience
-
-Tham dự buổi thi đấu **“FCAJ Tech Trivia Tournament”** là một trải nghiệm mở màn cực kỳ b bùng, giúp tôi cởi bỏ áp lực và tiếp thu kiến thức một cách tự nhiên nhất:
-
-#### Learning from team failures
-- Thất bại ở trận thứ 2 giúp đội chúng tôi nhìn thẳng vào những điểm chưa hoàn thiện trong việc phối hợp và chuẩn bị kiến thức nền tảng.
-
-#### Highly interactive and dramatic exposure
-- Không khí thi đấu nghẹt thở giữa các đội và cái kết dời trận chung kết sang buổi sau tạo ra động lực rất lớn cho các thành viên tiếp tục nghiên cứu sâu hơn để phục thù vào lần tới.
-
-#### Lessons learned
-- Kiến thức Cloud không chỉ nằm trên sách vở mà cần phải được chuyển hóa thành phản xạ thực tế. Sự gắn kết đồng đội chính là chìa khóa để giải quyết mọi bài toán kỹ thuật phức tạp dưới áp lực thời gian.
-
-#### Some event photos
-*Add your event photos here*
+### 6. Minh chứng hình ảnh (Evidence)
+*(Ông xem hướng dẫn thêm hình ảnh ở cuối câu trả lời của tôi để chèn ảnh thật vào đây nhé)*
