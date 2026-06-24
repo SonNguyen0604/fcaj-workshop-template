@@ -1,5 +1,5 @@
 ---
-title: "2. Project Proposal"
+title: "Project Proposal"
 date: 2026-06-22
 weight: 2
 chapter: false
