@@ -53,11 +53,12 @@ pre: " <b> 1.1. </b> "
         <ul>
           <li>Thực hiện Fork kho mã nguồn mẫu <code>fcaj-workshop-template</code> từ tài khoản mentor về tài khoản GitHub cá nhân.</li>
           <li>Kiểm tra cấu trúc các thư mục nội dung từ mục 1 đến mục 7 để chuẩn bị cho việc thay máu dữ liệu của nhóm.</li>
+          <li><b>Chủ động cấu hình AWS Budgets trên tài khoản cá nhân, thiết lập hạn mức cảnh báo chi phí ở ngưỡng $5.00 để quản lý ngân sách an toàn.</b></li>
         </ul>
       </td>
       <td>24/06/2026</td>
       <td>24/06/2026</td>
-      <td><a href="https://github.com/hdnkhoi-dev/fcaj-workshop-template">FCAJ Workshop Template</a></td>
+      <td><a href="https://github.com/hdnkhoi-dev/fcaj-workshop-template">FCAJ Workshop Template</a> / AWS Console</td>
     </tr>
     <tr>
       <td>5</td>
@@ -92,10 +93,15 @@ pre: " <b> 1.1. </b> "
    - Thành lập thành công nhóm 5 thành viên với tinh thần hợp tác cao.
    - Định hình rõ ràng trách nhiệm cá nhân: Bản thân phụ trách toàn bộ hạ tầng tài liệu, website portfolio và dịch thuật song ngữ, giải phóng áp lực viết báo cáo cho các thành viên chuyên trách kỹ thuật.
 
-2. **Thiết lập nền tảng tài liệu (GitHub Portfolio)**
+2. **Thiết lập nền tảng tài liệu & Giám sát hệ thống**
    - Làm chủ công cụ Git/GitHub ở mức độ cơ bản thông qua thao tác Fork và cấu hình file Markdown.
    - Hoàn thành việc cá nhân hóa trang chủ báo cáo thực tập song ngữ mà không làm lỗi cấu trúc định tuyến của template gốc.
+   - Kích hoạt thành công tính năng giám sát chi phí chủ động (Cost Monitoring) trên AWS để bảo vệ tài khoản.
 
 3. **Thống nhất kiến trúc & Kế hoạch hành động**
    - Toàn đội đạt được sự đồng thuận về mặt kỹ thuật đối với sơ đồ kiến trúc High Availability tổng quan.
    - Thiết lập thành công timeline rút gọn 5 tuần (kết thúc vào cuối tháng 7) để kịp tiến độ nghiệm thu dự án.
+
+### MINH CHỨNG THỰC HIỆN (EVIDENCE)
+
+<img width="1903" height="540" alt="image" src="https://github.com/user-attachments/assets/51a003ec-aab5-4323-bec7-0552fdd30d7b" />
