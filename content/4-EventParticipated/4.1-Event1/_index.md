@@ -41,4 +41,4 @@ The tournament escalated in tension until only the final two elite teams remaine
 * **Project Application:** The elimination highlighted core infrastructure knowledge gaps. I will immediately review VPC topology and High Availability mechanisms to directly support our team's upcoming Project Proposal phase.
 
 ### 6. Evidence
-*(Please refer to the guidelines below to insert your actual event screenshots here)*
+<img width="6960" height="4640" alt="6C7A6843" src="https://github.com/user-attachments/assets/8b0f92a9-2658-4da6-a57c-d37a52798d73" />
