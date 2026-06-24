@@ -1,65 +1,44 @@
 ---
-title: "Event 1"
+title: "Event 1: Cloud Architect Tournament"
 date: 2026-06-20
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “FCAJ Kick-off Tech Trivia & Community Tournament”
+# SUMMARY REPORT: "CLOUD ARCHITECT" ARCHITECTURE TOURNAMENT
 
-### Event Objectives
+### 1. Event Objectives
+* To test and reinforce cloud architectural design thinking, core AWS services, and fundamental cloud computing knowledge through a gamified, head-to-head competitive format.
+* To foster teamwork, role delegation, and rapid strategic decision-making under intense real-time pressure.
+* To create an interactive tech space for networking and collective learning among all interns within the First Cloud AI Journey (FCAJ) program.
 
-- Test and consolidate foundational knowledge of Cloud, AWS Services, and Generative AI through an engaging gamified competition.
-- Foster team bonding, enhance rapid reflexes, and improve team collaboration skills under time constraints.
-- Share learning roadmaps and identify knowledge gaps to prepare for upcoming technical project (Workshop) sprints.
+### 2. Speakers & Organizers
+* **Organizers:** Core Mentors and Operations Team of the AWS FCAJ program.
+* **Participants:** 8 teams selected randomly by the organizers and announced on June 19, 2026. Each team consisted of exactly 5 members to participate in the tournament.
 
-### Speakers / Organizers
+### 3. Tournament Format & Tactical Rules
+The tournament utilized a direct single-elimination (Knockout) format with unique professional rules:
+* **Scoring Mechanism:** Two teams battled directly by answering a set of questions scaling from Easy to Hard regarding cloud computing and infrastructure design. The team with the higher score advanced to the next round.
+* **Tie-breaker (Question 11):** If a match ended in a draw, a 11th tie-breaker question was triggered, where victory was determined by the fastest and most accurate buzzer response.
+* **Special Strategic Skills (1-time use per team):**
+  * **Minimum Risk:** Activated for uncertain answers. If incorrect, 0 points were deducted; if correct, the team earned 1/2 of the question's standard points.
+  * **Star of Hope:** Activated for the team's most confident answer. If correct, points earned were doubled (x2); if incorrect, the penalty deduction was also doubled (x2).
 
-- **Program Committee:** Core Mentors and Organizers of the AWS First Cloud AI Journey (FCAJ).
-- **Participants:** All internship learners, structurally divided into 8 teams competing in a direct head-to-head tournament.
+### 4. Key Highlights & Personal Experience
 
-### Key Highlights
+#### Match 2 and Lessons from Early Elimination
+My team competed right in the second match of the qualifiers. Although all 5 members collaborated intensively—delegating question reading, buzzer hitting, and final answering—the high-speed requirement for cloud infrastructure specifications caught us off guard. We failed to secure the scoring advantage and were eliminated early in the round.
 
-#### Direct Head-to-Head Knockout Tournament
-- The entire event was driven by a Tech Trivia tournament featuring 8 registered teams answering challenging questions from the tech committee.
-- Tournament Mechanism: A strict single-elimination (Knockout) format where teams competed 2-by-2 in each match. The team with higher points immediately advanced to the next round.
+#### Deep Observation and Knowledge Catching
+Following our elimination, I remained in the audience as an active observer for the rest of the matches. This allowed me to note down excellent architectural questions and identify common traps regarding VPC networking, IAM security policies, and operational parameters that other teams consistently stumbled on under psychological pressure.
 
-#### The Second Match and Lessons from Failure
-- My team participated in the tournament right in the second match of the preliminary round. Despite our best collaborative efforts, we fell short on points due to the intense demand for fast reflexes and high accuracy regarding Cloud infrastructure concepts, resulting in an early exit.
+#### Dramatic Postponement of the Finals
+The tournament escalated in tension until only the final two elite teams remained. Due to a breathless point-for-point tug-of-war using strategic skills like the "Star of Hope" and limited session time, both finalists mutually agreed to postpone the ultimate showdown to the next event, leaving an intensely cliffhanging conclusion.
 
-#### Deep Observation and Knowledge Consolidation
-- After being eliminated, I chose to remain engaged by closely observing all the subsequent matches of the remaining teams. This allowed me to take comprehensive notes on excellent technical questions and identify common pitfalls in network configurations, security, and LLM mechanisms that other teams encountered.
+### 5. Key Takeaways & Action Plan
+* **Team Synergy Under Pressure:** Real-time team dynamics require clear structure—designating roles for buzzer control, prompt analyzing, and final decision-making is critical to optimize competitive outcomes.
+* **Project Application:** The elimination highlighted core infrastructure knowledge gaps. I will immediately review VPC topology and High Availability mechanisms to directly support our team's upcoming Project Proposal phase.
 
-#### Dramatic Outcome and Postponed Finals
-- The tournament was highly competitive until only the final 2 teams remained for the ultimate match. Due to an intense deadlock and program time constraints, the final 2 teams decided to postpone the ultimate championship match to the next community event, leaving a highly anticipated cliffhanger.
-
-### Key Takeaways
-
-#### Design & Teamwork Mindset
-- **Reflexes Under Pressure:** When working in a time-critical team environment, allocating roles—such as question analyzer, final decision-maker, and buzzer presser—is paramount to success.
-- **Learning from Failure:** Losing a match is not an end point, but a valuable opportunity to transition into an observer role and analyze technical problems objectively.
-
-#### Technical Architecture Insights
-- Identified core technical knowledge gaps through trivia questions covering VPC setups, EC2 instances, IAM controls, and operational parameters of Large Language Models (LLMs).
-
-### Applying to Work
-
-- **Infrastructure Knowledge Review:** Immediately review fundamental networking and High Availability concepts to directly support our team's Topic 2 deployment, avoiding any baseline gaps.
-- **Enhance Team Communication:** Optimize swift decision-making and interaction workflows with the other 4 project team members to prepare for the upcoming technical delivery phase.
-
-### Event Experience
-
-Attending the **“FCAJ Tech Trivia Tournament”** was an incredibly high-energy opening experience that helped break the ice and facilitated natural knowledge absorption:
-
-#### Learning from team failures
-- The early exit in the second match helped our team clearly recognize areas of improvement in fast-paced coordination and baseline technical preparations.
-
-#### Highly interactive and dramatic exposure
-- The breathtaking competitive atmosphere and the postponed final match provided immense motivation for all members to dive deeper into cloud studies for future community challenges.
-
-#### Lessons learned
-- Cloud concepts must be converted into practical technical reflexes rather than just theoretical memorization. Solid team synergy is the key to solving complex technical tasks under stress.
-
-#### Some event photos
-*Add your event photos here*
+### 6. Evidence
+*(Please refer to the guidelines below to insert your actual event screenshots here)*
