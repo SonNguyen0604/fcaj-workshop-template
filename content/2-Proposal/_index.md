@@ -1,12 +1,9 @@
 ---
 title: "Project Proposal"
-date: 2026-06-22
 weight: 2
 chapter: false
-pre: " <b> 2.1. </b> "
+pre: " <b> 2. </b> "
 ---
-
-# PROJECT PROPOSAL
 
 ### 1. Project Overview
 This project focuses on researching and practically implementing an infrastructure capable of fault tolerance and ensuring High Availability (HA) for applications deployed on the AWS cloud platform. This architecture simulates a production-grade environment where the application must run continuously 24/7, even during a complete data center (Availability Zone) outage.
