@@ -8,18 +8,18 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Connect with team members, form a 5-member group, and establish a communication/work policy for a 5-week sprint.
-* Research the fundamentals of High Availability (HA) architecture on AWS and set up the bilingual reporting website infrastructure.
+* Connect, establish a 5-member team, and agree on a working regulation for a 5-week sprint.
+* Research the overview of High Availability (HA) on AWS and fully configure the bilingual report website infrastructure.
 
-### Tasks deployed this week:
+### Tasks to Deploy This Week:
 <table>
   <thead>
     <tr>
       <th>Day</th>
-      <th>Tasks</th>
+      <th>Task Description</th>
       <th>Start Date</th>
       <th>End Date</th>
-      <th>Resource / Documentation</th>
+      <th>Reference Resource</th>
     </tr>
   </thead>
   <tbody>
@@ -27,8 +27,8 @@ pre: " <b> 1.1. </b> "
       <td>Mon</td>
       <td>
         <ul>
-          <li>Attended the orientation and kick-off session for the Cloud Journey internship program at AWS Vietnam.</li>
-          <li>Connected with team members and agreed to select Topic 2: Ensuring High Availability on AWS.</li>
+          <li>Attended the Orientation (Kick-off) session of the Cloud Journey internship program at AWS Vietnam.</li>
+          <li>Got acquainted with team members and agreed to select Topic 2: High Availability on AWS.</li>
         </ul>
       </td>
       <td>22/06/2026</td>
@@ -39,8 +39,8 @@ pre: " <b> 1.1. </b> "
       <td>Tue</td>
       <td>
         <ul>
-          <li>Officially assigned team roles: Personally took on the role of Technical Writer and Progress Coordinator.</li>
-          <li>Researched foundational theories of High Availability, Fault Tolerance, and core components (Multi-AZ VPC, ALB, ASG, Multi-AZ RDS).</li>
+          <li>Officially allocated roles within the team: Personally took on the role of Technical Writer and Progress Coordinator.</li>
+          <li>Researched foundational theories of High Availability architecture, Fault Tolerance, and core components (Multi-AZ VPC, ALB, ASG, Multi-AZ RDS).</li>
         </ul>
       </td>
       <td>23/06/2026</td>
@@ -51,20 +51,21 @@ pre: " <b> 1.1. </b> "
       <td>Wed</td>
       <td>
         <ul>
-          <li>Forked the original <code>fcaj-workshop-template</code> repository to my personal GitHub account.</li>
-          <li>Inspected the content directory structure (Folders 1 to 7) to prepare for data customization.</li>
+          <li>Forked the template repository <code>fcaj-workshop-template</code> from the mentor's account to the personal GitHub account.</li>
+          <li>Inspected the content directory structure from section 1 to 7 to prepare for data customization.</li>
+          <li><b>Proactively configured AWS Budgets on the personal account, setting a cost alert threshold at $5.00 for budget safety.</b></li>
         </ul>
       </td>
       <td>24/06/2026</td>
       <td>24/06/2026</td>
-      <td><a href="https://github.com/hdnkhoi-dev/fcaj-workshop-template">FCAJ Workshop Template</a></td>
+      <td><a href="https://github.com/hdnkhoi-dev/fcaj-workshop-template">FCAJ Workshop Template</a> / AWS Console</td>
     </tr>
     <tr>
       <td>Thu</td>
       <td>
         <ul>
-          <li>Edited and updated personal identification information for Nguyen Duy Son (SGU - Information Systems) on the Portfolio homepage.</li>
-          <li>Configured and synchronized the homepage in both English and Vietnamese to fulfill project requirements.</li>
+          <li>Edited and updated personal profile for Nguyen Duy Son (SGU - Information Systems) on the Portfolio homepage.</li>
+          <li>Configured homepage synchronization in both English and Vietnamese to fulfill the mandatory project requirements.</li>
         </ul>
       </td>
       <td>25/06/2026</td>
@@ -75,8 +76,8 @@ pre: " <b> 1.1. </b> "
       <td>Fri</td>
       <td>
         <ul>
-          <li>Conducted an online team meeting to finalize the proposed HA system architecture diagram (Multi-AZ, Load Balancer, EC2, RDS, S3).</li>
-          <li>Consolidated Week 1 progress data from all members, finalized the Week 1 Worklog file, and prepared the draft skeleton for 2-Proposal.</li>
+          <li>Conducted an online team meeting to align on the preliminary High Availability architecture diagram (Multi-AZ, Load Balancer, EC2, RDS, S3).</li>
+          <li>Aggregated week 1 data from members, finalized the Week 1 Worklog file, and drafted the initial framework for section 2-Proposal.</li>
         </ul>
       </td>
       <td>26/06/2026</td>
@@ -86,16 +87,20 @@ pre: " <b> 1.1. </b> "
   </tbody>
 </table>
 
-### WEEK 1 OUTCOMES: TEAM INITIALIZATION & REPORTING INFRASTRUCTURE
+### WEEK 1 RESULTS: TEAM INITIALIZATION & REPORT PLATFORM
 
-1. **Team Alignment & Role Assignment**
-   - Successfully formed a cohesive 5-member team with a high collaborative spirit.
-   - Defined clear individual responsibilities: Personally managing the documentation, website portfolio, and bilingual translation, which unburdens technical members from reporting tasks.
+1. **Team Bonding & Role Allocation**
+   - Successfully formed a highly collaborative 5-member team.
+   - Clearly defined individual responsibilities: Personally in charge of the entire documentation infrastructure, portfolio website, and bilingual translation, relieving reporting pressure for technical members.
 
-2. **Documentation Foundation (GitHub Portfolio)**
-   - Mastered basic Git/GitHub operations through repository forking and Markdown file configuration.
-   - Successfully personalized the bilingual internship report homepage while maintaining the integrity of the original template's navigation structure.
+2. **Documentation Platform Setup & System Monitoring**
+   - Mastered basic Git/GitHub workflows through Forking and Markdown configurations.
+   - Completed the personalization of the bilingual internship report homepage without breaking the original template's routing structure.
+   - Successfully activated proactive Cost Monitoring on AWS to secure the account.
 
-3. **Architecture & Action Plan Alignment**
-   - Reached a technical consensus among all team members regarding the high-level High Availability architecture diagram.
-   - Established a compressed 5-week project timeline (ending by late July) to match the final evaluation deadline.
+3. **Architecture Realignment & Action Plan**
+   - The entire team reached a technical consensus on the comprehensive High Availability architecture diagram.
+   - Successfully established a detailed 8-week timeline (ending on August 15, 2026) in alignment with the university schedule to meet the project defense.
+
+### EVIDENCE
+
