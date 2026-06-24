@@ -1,151 +1,134 @@
 ---
-title: "Week 2 Worklog"
-date: 2026-04-27
+title: "Worklog Week 2"
+date: 2026-06-29
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
+
 ### Week 2 Objectives:
 
-* AWS Networking Fundamentals & Infrastructure Deployment
-* Building Secure Cloud Infrastructure: From VPC Peering to Active Directory Integration
+* Master foundational knowledge of AWS Networking, instance provisioning, and secure connectivity solutions.
+* Build and standardize technical documentation for the team, preparing the baseline system monitoring framework via CloudWatch.
 
-### Tasks to be carried out this week:
+### Tasks to Deploy This Week:
+
 <table>
   <thead>
     <tr>
       <th>Day</th>
-      <th>Task</th>
+      <th>Task Description</th>
       <th>Start Date</th>
-      <th>Completion Date</th>
-      <th>Reference Material</th>
+      <th>End Date</th>
+      <th>Reference Resource</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>2</td>
-      <td>
-      <ul>
-        <li>
-            Learn about Amazon VPC & Networking Fundamentals
-            <ul>
-              <li>Create VPC</li>
-              <li>Create Subnet</li>
-              <li>Create Internet Gateway</</li>
-              <li>Create Route Table</li>
-              <li>Create Security Group</li>
-              <li>Enabale VPC Flow Logs</li>
-            </ul>
-          </li>
-          </ul>
-      </td>
-      <td>27/04/2026</td>
-      <td>27/04/2026</td>
-      <td><a href="https://000003.awsstudygroup.com/3-prerequisite/">https://000003.awsstudygroup.com/3-prerequisite/</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>3</td>
+      <td>Mon</td>
       <td>
         <ul>
           <li>
-            Deploying Amazon EC2 Instances
+            Research Amazon VPC & Core Networking Foundations:
             <ul>
-              <li>Create EC2 Server</li>
-              <li>Test connection with VS Code</li>
-              <li>Create NAT Gateway</li>
-              <li>Create EC2 Instance Connect Endpoint</li>
-              <li>CloudWatch Monitoring &amp; Alerting</li> 
+              <li>Create VPC, Subnets, Internet Gateways, Route Tables, and Security Groups.</li>
+              <li>Enable VPC Flow Logs to capture IP traffic data.</li>
+              <li><i>Personal Task: Aggregated documentation and recorded the team's network parameters.</i></li>
             </ul>
           </li>
         </ul>
       </td>
-      <td>28/04/2026</td>
-      <td>28/04/2026</td>
-      <td><a href="https://000003.awsstudygroup.com/4-createec2server/">https://000003.awsstudygroup.com/4-createec2server/</a></td>
+      <td>29/06/2026</td>
+      <td>29/06/2026</td>
+      <td><a href="https://000003.awsstudygroup.com/3-prerequisite/">AWS Study Group Lab 3</a></td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>Tue</td>
       <td>
         <ul>
           <li>
-            Learn about Setting Up Site-to-site VPN Connection in AWS
+            Deploy Amazon EC2 Instances & Core Monitoring Infrastructure:
             <ul>
-              <li>Create a VPN Environment</li>
-              <li>Configure VPN Connection</li>
-              <li>VPN Connection using Strongswan with Transit Gateway</li>
+              <li>Provision EC2 Servers, configure NAT Gateways, and set up EC2 Instance Connect Endpoints.</li>
+              <li>Verify secure remote connections to instances using VS Code.</li>
+              <li><b>Personal Task: Researched and set up baseline CloudWatch Monitoring & Alerting for newly created instances.</b></li>
             </ul>
           </li>
         </ul>
       </td>
-      <td>29/04/2026</td>
-      <td>29/04/2026</td>
-      <td><a href="https://000003.awsstudygroup.com/5-vpnsitetosite/">https://000003.awsstudygroup.com/5-vpnsitetosite/</a></td>
+      <td>30/06/2026</td>
+      <td>30/06/2026</td>
+      <td><a href="https://000003.awsstudygroup.com/4-createec2server/">AWS Study Group Lab 4</a></td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>Wed</td>
       <td>
         <ul>
           <li>
-            Learn about Deploying Microsoft Active Directory on AWS
+            Research Site-to-Site VPN Connection Establishment on AWS:
             <ul>
-              <li>Preparation key pair, CloudFormation template Security Group</li>
-              <li>Connecting to RDGW</li>
-              <li>Microsoft AD Deployment</li>
-              <li>Set up DNS</li>
+              <li>Simulate a hybrid cloud environment by setting up VPN environments and configuring VPN Connections.</li>
+              <li>Configure secure VPN tunnels combining Strongswan with Transit Gateway.</li>
             </ul>
           </li>
         </ul>
       </td>
-      <td>30/04/2026</td>
-      <td>30/04/2026</td>
-      <td><a href="https://000010.awsstudygroup.com/">https://000010.awsstudygroup.com/</a></td>
+      <td>01/07/2026</td>
+      <td>01/07/2026</td>
+      <td><a href="https://000003.awsstudygroup.com/5-vpnsitetosite/">AWS Study Group Lab 5</a></td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>Thu</td>
       <td>
         <ul>
           <li>
-            Learn about Implementing and Securing VPC Peering Connections
+            Research Microsoft Active Directory Deployment on AWS:
             <ul>
-              <li>Update Network ACL</li>
-              <li>VPC Peering</li>
-              <li>Route Tables</li>
-              <li>Cross-Peer DNS</li>
+              <li>Prepare automated resources (Key pair, CloudFormation template, and Security Groups).</li>
+              <li>Deploy Microsoft AD, set up Private DNS, and secure administrative access via RDGW.</li>
+              <li><i>Personal Task: Edited the troubleshooting guide for domain connection issues for the team.</i></li>
             </ul>
           </li>
         </ul>
       </td>
-      <td>01/05/2026</td>
-      <td>01/05/2026</td>
-      <td><a href="https://000002.awsstudygroup.com/">https://000002.awsstudygroup.com/</a></td>
+      <td>02/07/2026</td>
+      <td>02/07/2026</td>
+      <td><a href="https://000010.awsstudygroup.com/">AWS Directory Service Docs</a></td>
+    </tr>
+    <tr>
+      <td>Fri</td>
+      <td>
+        <ul>
+          <li>
+            Research and Secure Inter-VPC Peering Connections:
+            <ul>
+              <li>Update Network ACLs, configure VPC Peering, and enable Cross-Peer DNS resolution.</li>
+              <li><b>Personal Task: Consolidated all hands-on data, finalized Week 2 Worklog, and drafted the outline for Blog Post 1.</b></li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>03/07/2026</td>
+      <td>03/07/2026</td>
+      <td><a href="https://000002.awsstudygroup.com/">AWS VPC Peering Lab</a></td>
     </tr>
   </tbody>
 </table>
 
-
-### WEEK 2 ACHIEVEMENTS: ADVANCED NETWORKING & INFRASTRUCTURE DEPLOYMENT
+### WEEK 2 ACCOMPLISHMENTS: ADVANCED NETWORKING & INFRASTRUCTURE PROVISIONING
 
 1. **AWS Networking & VPC Architecture**
-   - **VPC Fundamentals:** Successfully designed and deployed a custom Virtual Private Cloud (VPC), including public/private subnets and Internet Gateways for external connectivity.
-   - **Traffic Control:** Configured Route Tables and Security Groups to manage inbound and outbound traffic, ensuring granular security at the instance level.
-   - **Monitoring:** Enabled VPC Flow Logs to capture and analyze IP traffic information for network troubleshooting and security auditing.
-  
-2. **EC2 Compute & Connectivity Solutions**
-   - **Instance Deployment:** Launched and managed Amazon EC2 instances, verifying connectivity via VS Code and EC2 Instance Connect Endpoints.
-   - **Network Address Translation:** Implemented NAT Gateways to allow instances in private subnets to securely access the internet for updates while remaining shielded from unsolicited inbound traffic.
-   - **Observability:** Integrated CloudWatch Monitoring & Alerting to track instance performance and set up automated notifications for system health.
+   - **VPC Foundation:** Collaborated with the team to design a custom Virtual Private Cloud (VPC) tailored for high-availability infrastructure, separating public and private subnets clearly.
+   - **Traffic Control:** Standardized Route Tables and Security Groups while enabling VPC Flow Logs to collect precise traffic insights for future troubleshooting.
 
+2. **EC2 Compute & Observability (CloudWatch)**
+   - **Instance Deployment:** Successfully launched experimental Amazon EC2 instances, establishing secure routing via NAT Gateways and verifying remote SSH access via VS Code.
+   - **Personal Monitoring Setup:** Proactively configured CloudWatch baseline metrics for EC2 servers, preparing the groundwork for automated threshold alerting in later phases.
 
-3. **Hybrid Connectivity & Secure Tunneling**
-   - **Site-to-Site VPN:** Built a simulated hybrid environment by setting up a Site-to-Site VPN Connection.
-   - **Advanced Routing:** Configured VPN tunnels using Strongswan and Transit Gateway to facilitate secure, scalable communication between remote networks and AWS environments.
+3. **Hybrid Connectivity & Directory Services**
+   - **Secure VPN Tunnels:** Mastered the process of establishing an encrypted communication channel between on-premises environments and AWS using Strongswan and Transit Gateway.
+   - **Microsoft AD Governance:** Explored Microsoft Active Directory deployment automation via CloudFormation templates and secured remote administration through Remote Desktop Gateway (RDGW).
 
-4. **Identity & Directory Services (Microsoft AD)**
-   - **Directory Deployment:** Orchestrated the deployment of Microsoft Active Directory on AWS using CloudFormation templates for automated infrastructure as code (IaC).
-   - **Remote Management:** Established secure administrative access via Remote Desktop Gateway (RDGW) and configured Private DNS for seamless name resolution within the domain.
-
-5. **Inter-VPC Connectivity & Security**
-   - **VPC Peering:** Successfully established VPC Peering connections between multiple VPCs, allowing private resource sharing across different network segments.
-   - **Network Defense:** Hardened network security by updating Network ACLs (NACLs) and enabling Cross-Peer DNS resolution to maintain consistent service discovery across peered networks.
-
+4. **Team Documentation & Technical Writing Optimization**
+   - Excelled in the Technical Writer role by compiling and organizing configuration steps for VPC Peering and cross-peer DNS resolution.
+   - Drafted a comprehensive content outline for technical Blog Post 1, preparing for submission to the AWS Facebook community.
