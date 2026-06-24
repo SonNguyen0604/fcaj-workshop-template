@@ -19,7 +19,7 @@ title: "Báo cáo thực tập"
 
 * **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-* **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 06/08/2026
+* **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 15/08/2026
 
 ---
 ### Nội dung báo cáo
